@@ -7,13 +7,7 @@ import { ButtonLink } from "./ButtonLink";
 import styles from "./Header.module.css";
 import Image from "next/image";
 
-type NavItem = {
-  href: string;
-  label: string;
-  children?: NavItem[];
-};
-
-const navItems: NavItem[] = [
+const navItems = [
   { href: "/", label: "Accueil" },
   { href: "/a-propos", label: "À Propos" },
   {
@@ -66,7 +60,7 @@ export function Header() {
           const active =
             item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
 
-          if (item.children) {
+          if ("children" in item) {
             const childActive = item.children.some((child) =>
               pathname.startsWith(child.href),
             );

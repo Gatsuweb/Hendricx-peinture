@@ -202,8 +202,10 @@ export default function RenovationPage() {
           </div>
         </section>
 
-        <section className={`${styles.section} ${styles.localSeoLinks}`}>
-          <div className={styles.sectionIntro}>
+        <section
+          className={`${styles.section} ${styles.localSeoLinks} ${styles.renovationLocalSection}`}
+        >
+          <div className={`${styles.sectionIntro} ${styles.center}`}>
             <span className={`${styles.eyebrow} reveal`}>Renovation locale</span>
             <h2 className={`${styles.headlineMd} reveal delay100`}>
               Renovation de maisons et longeres en Centre Bretagne
@@ -214,14 +216,14 @@ export default function RenovationPage() {
               surfaces interieures.
             </p>
           </div>
-          <div className={styles.localLinkGrid}>
+          {/* <div className={styles.localLinkGrid}>
             <ButtonLink href="/peintre-carhaix-plouguer" tone="line">
               Renovation a Carhaix
             </ButtonLink>
             <ButtonLink href="/peintre-rostrenen" tone="line">
               Renovation a Rostrenen
             </ButtonLink>
-          </div>
+          </div> */}
         </section>
 
         <section className={styles.ctaBand}>

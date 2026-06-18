@@ -17,17 +17,17 @@
   justify-content: center;
   padding: 0 var(--margin-mobile);
   color: var(--on-primary);
-  mix-blend-mode: difference;
+  mix-blend-mode:difference ;
   pointer-events: none;
   text-align: center;
 }
 
 .displayTitle {
   max-width: none;
-  font-size: clamp(42px, 12vw, 15rem);
-  font-weight: 700;
+  font-size: clamp(42px, 14vw, 16rem);
+  font-weight: 600;
   line-height: 1.1;
-  letter-spacing: 0;
+  letter-spacing: 2px;
 }
 
 .heroTitleGroup {
@@ -669,6 +669,10 @@
   line-height: 1.75;
 }
 
+.renovationLocalSection {
+  justify-items: center;
+}
+
 .localProofSection {
   display: grid;
   gap: 48px;
@@ -829,6 +833,290 @@
 .splitSection {
   display: grid;
   gap: 48px;
+}
+
+.valuesSection {
+  display: grid;
+  gap: 56px;
+}
+
+.valuesGrid {
+  display: grid;
+  gap: var(--gutter);
+}
+
+.valueCard {
+  display: grid;
+  min-height: 260px;
+  align-content: start;
+  gap: 18px;
+  border: 1px solid rgb(0 139 139 / 16%);
+  padding: 28px;
+  background: var(--surface-container-low);
+  transition:
+    border-color 260ms ease,
+    box-shadow 260ms ease,
+    transform 260ms ease;
+}
+
+.valueCard:hover {
+  border-color: rgb(0 139 139 / 32%);
+  box-shadow: 0 18px 42px rgb(26 26 26 / 6%);
+  transform: translateY(-4px);
+}
+
+.valueCard > span {
+  color: var(--primary);
+  font-size: 30px;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 300,
+    "GRAD" 0,
+    "opsz" 32;
+}
+
+.valueCard h3 {
+  color: var(--primary);
+  font-size: clamp(28px, 4vw, 36px);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.valueCard p {
+  max-width: 420px;
+  color: var(--on-surface-variant);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.frescoIdentitySection,
+.frescoGallerySection,
+.frescoProcessSection {
+  display: grid;
+  gap: 64px;
+}
+
+.frescoStatementTitle {
+  display: grid;
+  max-width: 980px;
+  gap: 8px;
+  color: var(--primary);
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 600;
+  line-height: 1.08;
+}
+
+.frescoStatementTitle span {
+  color: var(--brand-neutral);
+}
+
+.frescoPrincipleGrid {
+  display: grid;
+  gap: var(--gutter);
+}
+
+.frescoPrincipleCard {
+  display: grid;
+  align-content: start;
+  gap: 18px;
+  border: 1px solid rgb(0 139 139 / 18%);
+  padding: 28px;
+  background: rgb(255 255 255 / 42%);
+  transition:
+    border-color 260ms ease,
+    transform 260ms ease;
+}
+
+.frescoPrincipleCard:hover {
+  border-color: rgb(0 139 139 / 34%);
+  transform: translateY(-3px);
+}
+
+.frescoPrincipleCard > span {
+  color: var(--primary);
+  font-size: 30px;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 300,
+    "GRAD" 0,
+    "opsz" 32;
+}
+
+.frescoPrincipleCard h3 {
+  color: var(--primary);
+  font-size: clamp(28px, 4vw, 36px);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.frescoPrincipleCard p {
+  max-width: 380px;
+  color: var(--on-surface-variant);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.frescoEditorialGrid {
+  display: grid;
+  gap: var(--gutter);
+}
+
+.frescoEditorialItem {
+  position: relative;
+  min-height: 360px;
+  overflow: hidden;
+  background: var(--surface-container);
+}
+
+.frescoEditorialItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 900ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.frescoEditorialItem:hover img {
+  transform: scale(1.045);
+}
+
+.frescoEditorialItem figcaption {
+  position: absolute;
+  inset: auto 0 0;
+  display: grid;
+  gap: 8px;
+  padding: 28px;
+  background: linear-gradient(transparent, rgb(0 0 0 / 72%));
+  color: white;
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 260ms ease,
+    transform 260ms ease;
+}
+
+.frescoEditorialItem figcaption span {
+  color: var(--secondary);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.frescoEditorialItem figcaption strong {
+  font-family: var(--font-headline);
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.frescoFeatureLarge,
+.frescoFeatureWide,
+.frescoFeatureTall,
+.frescoFeatureHalf {
+  aspect-ratio: 4 / 5;
+}
+
+.frescoTimeline {
+  position: relative;
+  display: grid;
+  gap: 28px;
+  list-style: none;
+}
+
+.frescoTimeline::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  width: 1px;
+  background: rgb(0 139 139 / 24%);
+  content: "";
+}
+
+.frescoTimeline li {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  padding-left: 44px;
+}
+
+.frescoTimeline li::before {
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  width: 11px;
+  height: 11px;
+  border: 1px solid var(--primary);
+  background: var(--background);
+  content: "";
+}
+
+.frescoTimeline span {
+  color: var(--secondary);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1;
+}
+
+.frescoTimeline strong {
+  color: var(--primary);
+  font-family: var(--font-headline);
+  font-size: clamp(26px, 4vw, 34px);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.frescoCraftBand {
+  padding: var(--section-gap) var(--margin-mobile);
+  background: var(--surface-container-low);
+}
+
+.frescoCraftInner {
+  display: grid;
+  max-width: 1920px;
+  margin: 0 auto;
+  gap: 48px;
+  align-items: center;
+}
+
+.frescoCraftImage {
+  height: min(760px, 82vh);
+  overflow: hidden;
+}
+
+.frescoCraftImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.14);
+  transition: transform 1.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.frescoCraftImage:global(.isVisible) img {
+  transform: scale(1);
+}
+
+.frescoQuoteSection {
+  display: grid;
+  justify-items: center;
+}
+
+.frescoQuoteSection blockquote {
+  max-width: 1180px;
+  color: var(--primary);
+  font-family: var(--font-headline);
+  font-size: clamp(40px, 7vw, 84px);
+  font-weight: 500;
+  line-height: 1.08;
+  text-align: center;
+}
+
+.frescoQuoteSection blockquote span {
+  display: block;
+  margin-top: 12px;
+  color: var(--brand-neutral);
 }
 
 .darkBand {
@@ -1183,6 +1471,10 @@
     grid-template-columns: 5fr 7fr;
   }
 
+  .renovationLocalSection {
+    grid-template-columns: 1fr;
+  }
+
   .localLinkGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1233,6 +1525,111 @@
   .splitSection {
     grid-template-columns: 7fr 5fr;
     align-items: center;
+  }
+
+  .valuesSection {
+    grid-template-columns: 5fr 7fr;
+    align-items: start;
+  }
+
+  .valuesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .frescoIdentitySection {
+    grid-template-columns: 5fr 7fr;
+    align-items: start;
+  }
+
+  .frescoProcessSection {
+    grid-template-columns: 1fr;
+    gap: 72px;
+  }
+
+  .frescoPrincipleGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .frescoGallerySection {
+    gap: 72px;
+  }
+
+  .frescoEditorialGrid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    align-items: stretch;
+  }
+
+  .frescoEditorialItem figcaption {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  .frescoEditorialItem:hover figcaption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .frescoFeatureLarge {
+    grid-column: span 7;
+    min-height: 680px;
+    aspect-ratio: 7 / 6;
+  }
+
+  .frescoFeatureTall {
+    grid-column: span 5;
+    min-height: 680px;
+    aspect-ratio: 4 / 6;
+  }
+
+  .frescoFeatureHalf {
+    grid-column: span 6;
+    min-height: 440px;
+    aspect-ratio: 6 / 4;
+  }
+
+  .frescoFeatureWide {
+    grid-column: span 7;
+    min-height: 460px;
+    aspect-ratio: 7 / 4;
+  }
+
+  .frescoTimeline {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 0;
+    padding-top: 44px;
+  }
+
+  .frescoTimeline::before {
+    top: 11px;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    height: 1px;
+  }
+
+  .frescoTimeline li {
+    min-height: 180px;
+    padding: 34px 28px 0 0;
+    border-right: 1px solid rgb(0 139 139 / 14%);
+  }
+
+  .frescoTimeline li:last-child {
+    border-right: 0;
+  }
+
+  .frescoTimeline li::before {
+    top: -38px;
+    left: 0;
+  }
+
+  .frescoCraftBand {
+    padding-right: var(--margin-desktop);
+    padding-left: var(--margin-desktop);
+  }
+
+  .frescoCraftInner {
+    grid-template-columns: 7fr 5fr;
   }
 
   .galleryGrid {

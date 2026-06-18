@@ -4,6 +4,33 @@ import { PageShell } from "@/components/PageShell";
 import { createMetadata } from "../seo";
 import styles from "../site.module.css";
 
+const values = [
+  {
+    icon: "draw",
+    title: "Artisanat",
+    description:
+      "Chaque projet est realise avec soin, entierement a la main et adapte a son environnement.",
+  },
+  {
+    icon: "architecture",
+    title: "Precision",
+    description:
+      "Une preparation minutieuse des supports garantit un rendu propre et durable.",
+  },
+  {
+    icon: "palette",
+    title: "Creativite",
+    description:
+      "Chaque realisation est unique et imaginee selon vos envies et votre espace.",
+  },
+  {
+    icon: "handshake",
+    title: "Accompagnement",
+    description:
+      "Un echange permanent, du premier rendez-vous jusqu'aux dernieres finitions.",
+  },
+];
+
 export const metadata: Metadata = createMetadata({
   title: "A propos de Hendricx Peinture",
   description:
@@ -50,6 +77,35 @@ export default function AboutPage() {
             <ButtonLink href="/contact" tone="line">
               Rencontrer l&apos;atelier
             </ButtonLink>
+          </div>
+        </section>
+        <section className={`${styles.section} ${styles.valuesSection}`}>
+          <div className={styles.sectionIntro}>
+            <span className={`${styles.eyebrow} reveal`}>Nos valeurs</span>
+            <h2 className={`${styles.headlineLg} reveal delay100`}>
+              Une peinture pensee pour durer.
+            </h2>
+            <p className={`${styles.bodyMd} reveal delay200`}>
+              Hendricx Peinture defend une approche artisanale, precise et sensible
+              du metier. Chaque chantier commence par l&apos;ecoute du lieu, le soin
+              apporte aux supports et la recherche d&apos;une finition juste.
+            </p>
+          </div>
+          <div className={styles.valuesGrid}>
+            {values.map((value, index) => (
+              <article
+                className={`${styles.valueCard} reveal ${
+                  index === 1 ? "delay100" : index > 1 ? "delay200" : ""
+                }`}
+                key={value.title}
+              >
+                <span className="material-symbols-outlined" aria-hidden="true">
+                  {value.icon}
+                </span>
+                <h3>{value.title}</h3>
+                <p>{value.description}</p>
+              </article>
+            ))}
           </div>
         </section>
       </main>
