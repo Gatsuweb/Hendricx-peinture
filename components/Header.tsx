@@ -59,9 +59,10 @@ export function Header() {
         {navItems.map((item) => {
           const active =
             item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+          const children = item.children;
 
-          if ("children" in item) {
-            const childActive = item.children.some((child) =>
+          if (children) {
+            const childActive = children.some((child) =>
               pathname.startsWith(child.href),
             );
 
@@ -87,7 +88,7 @@ export function Header() {
                 </div>
 
                 <div className={styles.subNav}>
-                  {item.children.map((child) => {
+                  {children.map((child) => {
                     const childIsActive = pathname.startsWith(child.href);
 
                     return (
