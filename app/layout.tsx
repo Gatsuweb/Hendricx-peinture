@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/test-hero-hendricx.jpg",
+        url: "/photos/661744embeddedImage.jpg",
         width: 1200,
         height: 630,
         alt: "Fresque murale et peinture artisanale Hendricx Peinture",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Hendricx Peinture | Artisan peintre en Centre Bretagne",
     description:
       "Peinture interieure, exterieure, renovation et fresques murales autour de Carhaix et Rostrenen.",
-    images: ["/test-hero-hendricx.jpg"],
+    images: ["/photos/661744embeddedImage.jpg"],
   },
   icons: {
     icon: "/favicon.ico",

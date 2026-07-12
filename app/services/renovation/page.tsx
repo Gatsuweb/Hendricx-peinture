@@ -18,38 +18,38 @@ export const metadata: Metadata = createMetadata({
 
 const keyPoints = [
   "Diagnostic du support avant mise en peinture",
-  "Protections soignees du chantier et des sols",
-  "Preparation adaptee selon l'etat des murs et plafonds",
-  "Finitions durables, regulieres et faciles a vivre",
+  "Protections soignées du chantier et des sols",
+  "Préparation adaptée selon l'état des murs et plafonds",
+  "Finitions propres et durables",
 ];
 
 const processSteps = [
   {
-    title: "Etat des lieux",
+    title: "État des lieux",
     description:
-      "Nous evaluons les supports, les reprises necessaires et le niveau de finition attendu avant de chiffrer.",
+      "Nous évaluons les supports, les reprises nécessaires et le niveau de finition attendu avant de chiffrer.",
   },
   {
-    title: "Preparation",
+    title: "Préparation",
     description:
-      "Protection des zones sensibles, lessivage, rebouchage, ratissage et poncage selon les contraintes du chantier.",
+      "Protection des zones sensibles, lessivage, rebouchage, ratissage et ponçage selon les contraintes du chantier.",
   },
   {
     title: "Application",
     description:
-      "Impressions, couches de finition et traitements specifiques sont appliques avec une execution reguliere et propre.",
+      "Impressions, couches de finition et traitements spécifiques sont appliqués avec une exécution régulière et propre.",
   },
   {
-    title: "Reception",
+    title: "Réception",
     description:
-      "Le chantier est controle avec vous pour valider les details, la nettete des raccords et la tenue generale du rendu.",
+      "Le chantier est contrôlé avec vous pour valider les détails, la netteté des raccords et la tenue générale du rendu.",
   },
 ];
 
 const projectScopes = [
-  "Maisons principales et residences secondaires",
-  "Appartements en renovation ou remise en etat",
-  "Pieces de vie, chambres, couloirs et plafonds",
+  "Maisons principales et résidences secondaires",
+  "Appartements en rénovation ou remise en état",
+  "Pièces de vie, chambres, couloirs et plafonds",
   "Biens avant mise en location ou mise en vente",
 ];
 
@@ -59,13 +59,12 @@ export default function RenovationPage() {
       <main>
         <section className={styles.subHero}>
           <div className={styles.subHeroInner}>
-            <span className={`${styles.eyebrow} reveal`}>Renovation interieure</span>
+            <span className={`${styles.eyebrow} reveal`}>Rénovation intérieure</span>
             <h1 className={`${styles.subHeroTitle} reveal delay100`}>
-              Des chantiers sobres, nets et maitrises
+              Des chantiers sobres, nets et maîtrisés
             </h1>
             <p className={`${styles.bodyLg} reveal delay200`}>
-              Preparation des supports, protections soignes et finitions durables
-              pour les maisons et appartements du Centre Bretagne.
+              Préparation des supports, protections soignées et finitions durables.
             </p>
           </div>
         </section>
@@ -74,26 +73,26 @@ export default function RenovationPage() {
           <div className={styles.sectionIntro}>
             <span className={`${styles.eyebrow} reveal`}>Notre engagement</span>
             <h2 className={`${styles.headlineMd} reveal delay100`}>
-              Une renovation pensee pour durer et rester simple a vivre
+              Des rénovations simples, propres et durables.
             </h2>
             <p className={`${styles.bodyMd} reveal delay200`}>
-              Nous intervenons avec une approche claire: comprendre l&apos;etat du
-              support, preparer correctement et livrer une finition propre, reguliere
-              et adaptee a l&apos;usage quotidien.
+              Nous commençons par analyser l&apos;état des surfaces, puis nous
+              préparons soigneusement les supports pour garantir un résultat propre et
+              adapté à votre quotidien.
             </p>
           </div>
           <div className={styles.renovationHeroPanel}>
             <div className={styles.renovationMetric}>
-              <strong>Supports analyses</strong>
-              <span>Murs, plafonds, boiseries et reprises localisees.</span>
+              <strong>Supports pris en charge</strong>
+              <span>Murs, plafonds, boiseries, métaux et petites réparations.</span>
             </div>
             <div className={styles.renovationMetric}>
-              <strong>Chantiers proteges</strong>
-              <span>Zones sensibles, circulations et mobilier pris en compte.</span>
+              <strong>Chantier protégé</strong>
+              <span>Protection des zones sensibles, passages et mobilier.</span>
             </div>
             <div className={styles.renovationMetric}>
-              <strong>Finitions adaptees</strong>
-              <span>Mat, veloute, lessivable ou technique selon la piece.</span>
+              <strong>Finitions adaptées</strong>
+              <span>Choix des finitions selon la pièce : mat, velouté, lessivable ou technique.</span>
             </div>
           </div>
         </section>
@@ -101,21 +100,21 @@ export default function RenovationPage() {
         <section className={`${styles.section} ${styles.splitSection}`}>
           <div className={`${styles.imageMask} maskReveal`}>
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB43Eql3v6eqjkc-WrF4CCGLFsHNtZwKLg4IJenv-cidXuCKGXCtRiJAiqxWoXOBcLAQTlltJAsai37ZYY4q2XxYRp5XW1fNSo3ulXQ3xDfH-fvLbxWz7i7EaPx6he0QM0fsW1vzj6Irg0gVIkdfiBaiRzPTUh37oTvT0zO8-jWZe1gZ-4En9-ZcNDVUdZm_mlMy7q7OalMXmvfTjoZtJAO0c8WWrfPCdPqrUo28pP7TwIFd7IUPeT_qT0ayyzPHd-t3Rb8uBmC_Zw"
-              alt="Enduit mineral et finition murale texturee pour renovation interieure"
+              src="/photos/477592076_2078489795923540_2799130433770111071_n.jpg"
+              alt="Salon rénové avec peinture intérieure soignée"
               loading="lazy"
               decoding="async"
             />
           </div>
           <div className={styles.serviceText}>
-            <span className={`${styles.eyebrow} reveal`}>Intervention maitrisee</span>
+            <span className={`${styles.eyebrow} reveal`}>Intervention maîtrisée</span>
             <h2 className={`${styles.headlineLg} reveal delay100`}>
-              Une execution serieuse du premier diagnostic a la derniere couche
+              Un travail sérieux, du diagnostic à la finition.
             </h2>
             <p className={`${styles.bodyMd} reveal delay200`}>
-              Chaque chantier avance avec une logique simple: corriger les defauts du
-              support, choisir la bonne preparation, appliquer les produits adaptes et
-              tenir un niveau de finition constant dans le temps.
+              Chaque chantier est réalisé étape par étape : analyse du support,
+              préparation adaptée, application des bons produits et finition soignée
+              pour un résultat durable.
             </p>
             <div className={styles.renovationChecklist}>
               {keyPoints.map((point) => (
@@ -137,28 +136,26 @@ export default function RenovationPage() {
           <div className={styles.sectionIntro}>
             <span className={`${styles.eyebrow} reveal`}>Ce que nous traitons</span>
             <h2 className={`${styles.headlineMd} reveal delay100`}>
-              Une reponse adaptee a l&apos;etat reel du chantier
+              Une intervention adaptée à l&apos;état du chantier.
             </h2>
           </div>
           <div className={styles.statsGrid}>
             <div className={styles.statItem}>
-              <strong>Preparation</strong>
+              <strong>Préparation</strong>
               <span>
-                Rebouchage, lissage, poncage et ratissage selon les irregularites
-                constatees.
+                Rebouchage, lissage, ponçage et ratissage selon les irrégularités
+                constatées.
               </span>
             </div>
             <div className={styles.statItem}>
               <strong>Protection</strong>
-              <span>
-                Sols, menuiseries, zones de passage et mobilier traites avec methode.
-              </span>
+              <span>Sols, menuiseries, zones de passage et mobilier traités avec méthode.</span>
             </div>
             <div className={styles.statItem}>
               <strong>Finition</strong>
               <span>
-                Teintes, aspects et resistance choisis selon la fonction de chaque
-                piece.
+                Teintes, aspects et résistance choisis selon la fonction de chaque
+                pièce.
               </span>
             </div>
           </div>
@@ -166,9 +163,9 @@ export default function RenovationPage() {
 
         <section className={`${styles.section} ${styles.renovationProcessSection}`}>
           <div className={styles.sectionIntro}>
-            <span className={`${styles.eyebrow} reveal`}>Methode de travail</span>
+            <span className={`${styles.eyebrow} reveal`}>Méthode de travail</span>
             <h2 className={`${styles.headlineMd} reveal delay100`}>
-              Un deroulement lisible, du devis a la livraison
+              Un déroulement lisible, du devis à la livraison
             </h2>
           </div>
           <div className={styles.renovationProcessGrid}>
@@ -186,8 +183,8 @@ export default function RenovationPage() {
           <div className={styles.sectionIntro}>
             <span className={`${styles.eyebrow} reveal`}>Types de projets</span>
             <h2 className={`${styles.headlineMd} reveal delay100`}>
-              Des interventions pour l&apos;habitat courant comme pour les biens a
-              remettre en etat
+              Des interventions pour l&apos;habitat courant comme pour les biens à
+              remettre en état
             </h2>
           </div>
           <div className={styles.renovationScopeGrid}>
@@ -206,32 +203,24 @@ export default function RenovationPage() {
           className={`${styles.section} ${styles.localSeoLinks} ${styles.renovationLocalSection}`}
         >
           <div className={`${styles.sectionIntro} ${styles.center}`}>
-            <span className={`${styles.eyebrow} reveal`}>Renovation locale</span>
+            <span className={`${styles.eyebrow} reveal`}>Rénovation locale</span>
             <h2 className={`${styles.headlineMd} reveal delay100`}>
-              Renovation de maisons et longeres en Centre Bretagne
+              Rénovation de maisons et longères en Centre Bretagne
             </h2>
             <p className={styles.renovationNote}>
               Nous intervenons autour de Carhaix, Rostrenen et Paule pour des projets
-              de remise en etat, de rafraichissement ou de renovation complete des
-              surfaces interieures.
+              de remise en état, de rafraîchissement ou de rénovation complète des
+              surfaces intérieures.
             </p>
           </div>
-          {/* <div className={styles.localLinkGrid}>
-            <ButtonLink href="/peintre-carhaix-plouguer" tone="line">
-              Renovation a Carhaix
-            </ButtonLink>
-            <ButtonLink href="/peintre-rostrenen" tone="line">
-              Renovation a Rostrenen
-            </ButtonLink>
-          </div> */}
         </section>
 
         <section className={styles.ctaBand}>
           <div className={styles.ctaInner}>
             <h2 className={styles.headlineLg}>Parlons de votre chantier</h2>
             <p className={styles.bodyLg}>
-              Si vous cherchez une renovation interieure serieuse, propre et lisible,
-              nous pouvons etudier votre projet et definir le bon niveau de finition.
+              Si vous cherchez une rénovation intérieure sérieuse, propre et lisible,
+              nous pouvons étudier votre projet et définir le bon niveau de finition.
             </p>
             <ButtonLink href="/contact">Demander un devis</ButtonLink>
           </div>

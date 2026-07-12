@@ -1,4 +1,4 @@
-import { scheduledLocalSlugs } from "./seo";
+﻿import { scheduledLocalSlugs } from "./seo";
 
 export type LocalPageData = {
   slug: string;
@@ -87,17 +87,17 @@ export const localPages: Record<string, LocalPageData> = {
     nearby: ["Cleden-Poher", "Motreff", "Poullaouen", "Mael-Carhaix", "Glomel"],
     gallery: [
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAR2ga3-bzCJsSOUxfvA23VnRqT5rkm6v6KgZBuBei17xEqWwhd06-QQ7p3HlCqBex3lPqL5QYAiJNyhRmmzadMZ81xBHuUqSmw617kJR3X5A9p4Br21fU6wln_KrvURHwwWICLgLeOsguGz_hB8oMjFM3vF08XoduJwPWzQHU5bjgrzIqM2zluPgqBiTEtKITYXEP4QbrgMRhcpvmZNpdGlUYxXLb48kJVQzO1vJrDRNY6K2R4y0nlGQ_J3AkCQAxdUMfrU1kGPMU",
+        src: "/photos/476836935_2078489489256904_6370289537618551027_n.jpg",
         alt: "Peinture interieure soignee dans une maison a Carhaix-Plouguer",
         caption: "Finition mate et preparation des murs pour une piece de vie proche de Carhaix.",
       },
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuB43Eql3v6eqjkc-WrF4CCGLFsHNtZwKLg4IJenv-cidXuCKGXCtRiJAiqxWoXOBcLAQTlltJAsai37ZYY4q2XxYRp5XW1fNSo3ulXQ3xDfH-fvLbxWz7i7EaPx6he0QM0fsW1vzj6Irg0gVIkdfiBaiRzPTUh37oTvT0zO8-jWZe1gZ-4En9-ZcNDVUdZm_mlMy7q7OalMXmvfTjoZtJAO0c8WWrfPCdPqrUo28pP7TwIFd7IUPeT_qT0ayyzPHd-t3Rb8uBmC_Zw",
+        src: "/photos/480347323_2084649431974243_4394888306244998500_n.jpg",
         alt: "Enduit mineral et renovation interieure autour de Carhaix",
         caption: "Travail de matiere pour valoriser les volumes d'une renovation en Centre Bretagne.",
       },
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuABtvKqmQHN6ZMgVE5FUR6lH0cfaBb-KU6jxn_JSmTOcR0N76qOcTZw7cHKx7ZzoS2vBP_jvApyTaEr8WCW-GNxoqGZwUydb0wT5XMY-1BalcxPv87eEC0AFS7FJz8PtxypUY0lN5Wx7TOC2V58EI3mrq_vOinjXbSYrF9gSzrUurTy7ULeCbY0Y7QMn2I4aiZD2jrZYYsqlvfmesNrjxbjoCMX2DEdWWWv_Nvvw2zpqdn65VUL5iX4SWb9buzgptGpxxeWuFasT-o",
+        src: "/photos/661744embeddedImage.jpg",
         alt: "Fresque murale artistique pour un projet a Carhaix-Plouguer",
         caption: "Creation murale sur mesure pour donner une identite forte a un espace.",
       },
@@ -194,17 +194,17 @@ export const localPages: Record<string, LocalPageData> = {
     nearby: ["Glomel", "Mael-Carhaix", "Plouguernevel", "Gouarec", "Bonen"],
     gallery: [
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuB43Eql3v6eqjkc-WrF4CCGLFsHNtZwKLg4IJenv-cidXuCKGXCtRiJAiqxWoXOBcLAQTlltJAsai37ZYY4q2XxYRp5XW1fNSo3ulXQ3xDfH-fvLbxWz7i7EaPx6he0QM0fsW1vzj6Irg0gVIkdfiBaiRzPTUh37oTvT0zO8-jWZe1gZ-4En9-ZcNDVUdZm_mlMy7q7OalMXmvfTjoZtJAO0c8WWrfPCdPqrUo28pP7TwIFd7IUPeT_qT0ayyzPHd-t3Rb8uBmC_Zw",
+        src: "/photos/477796924_2078489629256890_7221419132280354026_n.jpg",
         alt: "Renovation interieure et finition murale a Rostrenen",
         caption: "Preparation minutieuse pour un rendu sobre dans une maison du Centre Bretagne.",
       },
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAR2ga3-bzCJsSOUxfvA23VnRqT5rkm6v6KgZBuBei17xEqWwhd06-QQ7p3HlCqBex3lPqL5QYAiJNyhRmmzadMZ81xBHuUqSmw617kJR3X5A9p4Br21fU6wln_KrvURHwwWICLgLeOsguGz_hB8oMjFM3vF08XoduJwPWzQHU5bjgrzIqM2zluPgqBiTEtKITYXEP4QbrgMRhcpvmZNpdGlUYxXLb48kJVQzO1vJrDRNY6K2R4y0nlGQ_J3AkCQAxdUMfrU1kGPMU",
+        src: "/photos/480680043_2084649251974261_4842625914116337843_n.jpg",
         alt: "Peinture decorative mate dans un interieur a Rostrenen",
         caption: "Teinte profonde et finition adaptee a une piece de vie sollicitee.",
       },
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDY2veYLDhzNiFrE5y9DioL4vTdxXl5BZlEJOKbpjzT7kFYsrDOk6nhoCNIJnGcWAyq7KUBi1dbtawp2QMo3SwIGBZcVawLP5lgPZ6hhfcoY0z2zxym5Yz-RpVFRYDPbdxmQiRE0CjmrW5LRauPPtJ1HKOwr6KJfguM4obtCIlwOQ8-SbZsow6YXzCrRzIs-Gpx9RoJj6g_1RARAaOGfwbKZKgTgMz-J9TO7Zl93WpHOnwUwyp_laumW_Qlt7OHm4Mw_FwX7RWq7Og",
+        src: "/photos/2962805embeddedImage.jpg",
         alt: "Fresque murale personnalisee autour de Rostrenen",
         caption: "Composition murale pensee pour l'usage et la lumiere du lieu.",
       },
@@ -303,17 +303,17 @@ export const localPages: Record<string, LocalPageData> = {
     nearby: ["Le Saint", "Langonnet", "Roudouallec", "Spezet", "Plouray"],
     gallery: [
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAR2ga3-bzCJsSOUxfvA23VnRqT5rkm6v6KgZBuBei17xEqWwhd06-QQ7p3HlCqBex3lPqL5QYAiJNyhRmmzadMZ81xBHuUqSmw617kJR3X5A9p4Br21fU6wln_KrvURHwwWICLgLeOsguGz_hB8oMjFM3vF08XoduJwPWzQHU5bjgrzIqM2zluPgqBiTEtKITYXEP4QbrgMRhcpvmZNpdGlUYxXLb48kJVQzO1vJrDRNY6K2R4y0nlGQ_J3AkCQAxdUMfrU1kGPMU",
+        src: "/photos/6974435embeddedImage.jpg",
         alt: "Peinture interieure pour maison ancienne a Gourin",
         caption: "Finition profonde pour un interieur de maison ancienne dans le pays de Gourin.",
       },
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuB43Eql3v6eqjkc-WrF4CCGLFsHNtZwKLg4IJenv-cidXuCKGXCtRiJAiqxWoXOBcLAQTlltJAsai37ZYY4q2XxYRp5XW1fNSo3ulXQ3xDfH-fvLbxWz7i7EaPx6he0QM0fsW1vzj6Irg0gVIkdfiBaiRzPTUh37oTvT0zO8-jWZe1gZ-4En9-ZcNDVUdZm_mlMy7q7OalMXmvfTjoZtJAO0c8WWrfPCdPqrUo28pP7TwIFd7IUPeT_qT0ayyzPHd-t3Rb8uBmC_Zw",
+        src: "/photos/715164embeddedImage.jpg",
         alt: "Renovation de longere bretonne autour de Gourin",
         caption: "Travail de support et rendu mineral pour accompagner pierre et boiseries.",
       },
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuABtvKqmQHN6ZMgVE5FUR6lH0cfaBb-KU6jxn_JSmTOcR0N76qOcTZw7cHKx7ZzoS2vBP_jvApyTaEr8WCW-GNxoqGZwUydb0wT5XMY-1BalcxPv87eEC0AFS7FJz8PtxypUY0lN5Wx7TOC2V58EI3mrq_vOinjXbSYrF9gSzrUurTy7ULeCbY0Y7QMn2I4aiZD2jrZYYsqlvfmesNrjxbjoCMX2DEdWWWv_Nvvw2zpqdn65VUL5iX4SWb9buzgptGpxxeWuFasT-o",
+        src: "/photos/311261embeddedImage.jpg",
         alt: "Fresque murale personnalisee a Gourin",
         caption: "Projet de decoration murale pour donner une identite a un espace.",
       },
@@ -412,17 +412,17 @@ export const localPages: Record<string, LocalPageData> = {
     nearby: ["Berrien", "Locmaria-Berrien", "Scrignac", "Poullaouen", "Plouye"],
     gallery: [
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuB43Eql3v6eqjkc-WrF4CCGLFsHNtZwKLg4IJenv-cidXuCKGXCtRiJAiqxWoXOBcLAQTlltJAsai37ZYY4q2XxYRp5XW1fNSo3ulXQ3xDfH-fvLbxWz7i7EaPx6he0QM0fsW1vzj6Irg0gVIkdfiBaiRzPTUh37oTvT0zO8-jWZe1gZ-4En9-ZcNDVUdZm_mlMy7q7OalMXmvfTjoZtJAO0c8WWrfPCdPqrUo28pP7TwIFd7IUPeT_qT0ayyzPHd-t3Rb8uBmC_Zw",
+        src: "/photos/477592076_2078489795923540_2799130433770111071_n.jpg",
         alt: "Renovation interieure pour maison proche de Huelgoat",
         caption: "Finition adaptee aux maisons proches de la foret et aux pieces peu lumineuses.",
       },
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAR2ga3-bzCJsSOUxfvA23VnRqT5rkm6v6KgZBuBei17xEqWwhd06-QQ7p3HlCqBex3lPqL5QYAiJNyhRmmzadMZ81xBHuUqSmw617kJR3X5A9p4Br21fU6wln_KrvURHwwWICLgLeOsguGz_hB8oMjFM3vF08XoduJwPWzQHU5bjgrzIqM2zluPgqBiTEtKITYXEP4QbrgMRhcpvmZNpdGlUYxXLb48kJVQzO1vJrDRNY6K2R4y0nlGQ_J3AkCQAxdUMfrU1kGPMU",
+        src: "/photos/480481780_2084649165307603_7857932999276320151_n.jpg",
         alt: "Peinture mate pour gite ou residence secondaire a Huelgoat",
         caption: "Couleur sobre et entretien facilite pour un lieu regulierement occupe.",
       },
       {
-        src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDY2veYLDhzNiFrE5y9DioL4vTdxXl5BZlEJOKbpjzT7kFYsrDOk6nhoCNIJnGcWAyq7KUBi1dbtawp2QMo3SwIGBZcVawLP5lgPZ6hhfcoY0z2zxym5Yz-RpVFRYDPbdxmQiRE0CjmrW5LRauPPtJ1HKOwr6KJfguM4obtCIlwOQ8-SbZsow6YXzCrRzIs-Gpx9RoJj6g_1RARAaOGfwbKZKgTgMz-J9TO7Zl93WpHOnwUwyp_laumW_Qlt7OHm4Mw_FwX7RWq7Og",
+        src: "/photos/830e704a-58d9-4ba1-bd83-2b2384fa5691.jpg",
         alt: "Fresque murale inspiree par Huelgoat et son environnement forestier",
         caption: "Creation murale inspiree par la matiere, la lumiere et le paysage local.",
       },
@@ -464,3 +464,4 @@ export const localPages: Record<string, LocalPageData> = {
 export function isLocalPageNoindex(slug: string) {
   return scheduledLocalSlugs.includes(slug);
 }
+

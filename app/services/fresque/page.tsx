@@ -8,62 +8,56 @@ const frescoPrinciples = [
   {
     icon: "gesture",
     title: "Unique",
-    description: "Chaque création est entièrement imaginée pour un seul lieu.",
+    description: "Chaque création est conçue sur mesure pour un lieu précis.",
   },
   {
     icon: "view_in_ar",
-    title: "Pensée dans son environnement",
-    description:
-      "La composition s'intègre naturellement à l'architecture et aux volumes.",
+    title: "Intégré",
+    description: "Pensée pour s'harmoniser avec l'architecture et les volumes.",
   },
   {
     icon: "verified",
     title: "Durable",
     description:
-      "Des matériaux et une préparation soignée garantissent une œuvre pérenne.",
+      "Des matériaux adaptés et une préparation soignée pour un résultat qui dure dans le temps.",
   },
 ];
 
 const editorialProjects = [
   {
     type: "Maison",
-    title: "Horizon abstrait",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuB61gPt-df3paHZX6mNFFRa9e5xN_ZzJoivVaMURR3xtVPXg3-8wnROHFckykks_UnkbdkEfrn9DdNFxWBthFoYmx_CWE4s51RT7_oRhyzdPprT-1QovdeXrboFAPIRu1IDluIEQFPzGyuptQO09T0priKiqe4x1BOb9KgnU0II_Uwu-bOmKvyq_hCre0Ym9q61iqcH-Z95my_gCnNuj7wcUqOOWOMqUqGPUzc5bTkrp3iP0NAZG9BnekI1MjMT5HSnJqnQo2HiqYg",
+    title: "Route au coucher du soleil",
+    image: "/photos/661744embeddedImage.jpg",
     className: "frescoFeatureLarge",
   },
   {
     type: "Restaurant",
-    title: "Ambiance graphique",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDY2veYLDhzNiFrE5y9DioL4vTdxXl5BZlEJOKbpjzT7kFYsrDOk6nhoCNIJnGcWAyq7KUBi1dbtawp2QMo3SwIGBZcVawLP5lgPZ6hhfcoY0z2zxym5Yz-RpVFRYDPbdxmQiRE0CjmrW5LRauPPtJ1HKOwr6KJfguM4obtCIlwOQ8-SbZsow6YXzCrRzIs-Gpx9RoJj6g_1RARAaOGfwbKZKgTgMz-J9TO7Zl93WpHOnwUwyp_laumW_Qlt7OHm4Mw_FwX7RWq7Og",
+    title: "Fresque en cours",
+    image: "/photos/187393embeddedImage.jpg",
     className: "frescoFeatureTall",
   },
   {
     type: "Commerce",
-    title: "Identité murale",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuABtvKqmQHN6ZMgVE5FUR6lH0cfaBb-KU6jxn_JSmTOcR0N76qOcTZw7cHKx7ZzoS2vBP_jvApyTaEr8WCW-GNxoqGZwUydb0wT5XMY-1BalcxPv87eEC0AFS7FJz8PtxypUY0lN5Wx7TOC2V58EI3mrq_vOinjXbSYrF9gSzrUurTy7ULeCbY0Y7QMn2I4aiZD2jrZYYsqlvfmesNrjxbjoCMX2DEdWWWv_Nvvw2zpqdn65VUL5iX4SWb9buzgptGpxxeWuFasT-o",
+    title: "Terrain de sport",
+    image: "/photos/2962805embeddedImage.jpg",
     className: "frescoFeatureHalf",
   },
   {
     type: "Salon",
-    title: "Matière et lumière",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBMc2FhJubpMxM-g4Rs7WCdAtvaAFerT8TAL0KCfHONX1CgnjlETSB3NNZBqAe2yelOxH2TdIHyBJ9eklWOmkw5THc0whPIo9TWKnubaRYuA9th5Svs5__QhMDD9mKqHshumKV14px2ACVNQ4gPycaNbnyFYLvVaISzqmLVQXYyLeo0ewkBNbxiWpDxYq8V6zXbYNHI8URHwmHuHc_z21NTit-Ktj2CNYRiGCP-q2rdBvXcE3FjkrLaMYF_xyroac4ME4b_MvfMdQ8",
+    title: "Jeu et mouvement",
+    image: "/photos/311261embeddedImage.jpg",
     className: "frescoFeatureHalf",
   },
   {
     type: "Chambre",
-    title: "Composition douce",
-    image: "/test-hero-hendricx.jpg",
+    title: "Caserne graphique",
+    image: "/photos/830e704a-58d9-4ba1-bd83-2b2384fa5691.jpg",
     className: "frescoFeatureWide",
   },
   {
     type: "Bureau",
-    title: "Espace signe",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuB61gPt-df3paHZX6mNFFRa9e5xN_ZzJoivVaMURR3xtVPXg3-8wnROHFckykks_UnkbdkEfrn9DdNFxWBthFoYmx_CWE4s51RT7_oRhyzdPprT-1QovdeXrboFAPIRu1IDluIEQFPzGyuptQO09T0priKiqe4x1BOb9KgnU0II_Uwu-bOmKvyq_hCre0Ym9q61iqcH-Z95my_gCnNuj7wcUqOOWOMqUqGPUzc5bTkrp3iP0NAZG9BnekI1MjMT5HSnJqnQo2HiqYg",
+    title: "Espace signé",
+    image: "/photos/86282ef7-10f8-4a6c-8db6-5d4b9a92751c.jpg",
     className: "frescoFeatureTall",
   },
 ];
@@ -74,7 +68,7 @@ const processSteps = [
   "Recherche graphique",
   "Esquisse",
   "Validation",
-  "Realisation",
+  "Réalisation",
   "Livraison",
 ];
 
@@ -96,13 +90,13 @@ export default function FresquePage() {
       <main>
         <section className={styles.subHero}>
           <div className={styles.subHeroInner}>
-            <span className={`${styles.eyebrow} reveal`}>Artisanal Murals</span>
+            <span className={`${styles.eyebrow} reveal`}>Et si votre mur devenait une œuvre ?</span>
             <h1 className={`${styles.subHeroTitle} reveal delay100`}>
-              Fresques Artistiques
+              Fresques artistiques
             </h1>
             <p className={`${styles.bodyLg} reveal delay200`}>
-              Des murs pensés comme des surfaces vivantes, de l&apos;intention
-              artistique au geste artisanal.
+              Des murs transformés en surfaces vivantes, entre idée créative et
+              savoir-faire artisanal.
             </p>
           </div>
         </section>
@@ -110,18 +104,18 @@ export default function FresquePage() {
         <section className={`${styles.section} ${styles.splitSection}`}>
           <div className={`${styles.imageMask} maskReveal`}>
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMc2FhJubpMxM-g4Rs7WCdAtvaAFerT8TAL0KCfHONX1CgnjlETSB3NNZBqAe2yelOxH2TdIHyBJ9eklWOmkw5THc0whPIo9TWKnubaRYuA9th5Svs5__QhMDD9mKqHshumKV14px2ACVNQ4gPycaNbnyFYLvVaISzqmLVQXYyLeo0ewkBNbxiWpDxYq8V6zXbYNHI8URHwmHuHc_z21NTit-Ktj2CNYRiGCP-q2rdBvXcE3FjkrLaMYF_xyroac4ME4b_MvfMdQ8"
-              alt="Artisan applying pigment to a textured wall fresco"
+              src="/photos/07c0b64e-abfa-46c4-870d-aaf5af280acc.jpg"
+              alt="Artisan en train de peindre une fresque murale"
             />
           </div>
           <div className={styles.serviceText}>
-            <span className={`${styles.eyebrow} reveal`}>The Artistic Gesture</span>
+            <span className={`${styles.eyebrow} reveal`}>La matière comme langage</span>
             <h2 className={`${styles.headlineLg} reveal delay100`}>
-              La matière comme langage
+              Une fresque créée pour votre lieu
             </h2>
             <p className={`${styles.bodyMd} reveal delay200`}>
-              Chaque fresque naît d&apos;un dialogue entre le lieu, la lumière, les
-              usages et l&apos;identité du commanditaire.
+              Chaque fresque est créée en lien avec le lieu, la lumière et vos envies,
+              pour un résultat adapté et harmonieux.
             </p>
             <ButtonLink href="/contact" tone="line">
               Démarrer un projet
@@ -135,14 +129,13 @@ export default function FresquePage() {
               Une œuvre pensée pour le lieu
             </span>
             <h2 className={`${styles.frescoStatementTitle} reveal delay100`}>
-              Une fresque ne décore pas un espace.
-              <span>Elle lui donne une identité.</span>
+              Une fresque et son espace
+              <span>Une fresque ne se contente pas de décorer.</span>
             </h2>
             <p className={`${styles.bodyMd} reveal delay200`}>
-              Chaque projet est imaginé selon le lieu, son architecture, sa lumière
-              et les envies de celles et ceux qui l&apos;habitent. La fresque devient
-              une présence juste, composée pour dialoguer avec l&apos;espace plutôt que
-              le remplir.
+              Elle donne une identité au lieu. Chaque projet est pensé selon l&apos;espace,
+              sa lumière et vos envies, pour s&apos;intégrer naturellement et créer une
+              vraie harmonie avec le décor.
             </p>
           </div>
           <div className={styles.frescoPrincipleGrid}>
@@ -223,8 +216,8 @@ export default function FresquePage() {
           <div className={styles.frescoCraftInner}>
             <div className={`${styles.frescoCraftImage} maskReveal`}>
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMc2FhJubpMxM-g4Rs7WCdAtvaAFerT8TAL0KCfHONX1CgnjlETSB3NNZBqAe2yelOxH2TdIHyBJ9eklWOmkw5THc0whPIo9TWKnubaRYuA9th5Svs5__QhMDD9mKqHshumKV14px2ACVNQ4gPycaNbnyFYLvVaISzqmLVQXYyLeo0ewkBNbxiWpDxYq8V6zXbYNHI8URHwmHuHc_z21NTit-Ktj2CNYRiGCP-q2rdBvXcE3FjkrLaMYF_xyroac4ME4b_MvfMdQ8"
-                alt="Détail de peinture, pigment et texture sur une fresque murale"
+                src="/photos/187393embeddedImage.jpg"
+                alt="Application de peinture sur une fresque murale"
                 loading="lazy"
                 decoding="async"
               />
@@ -232,13 +225,12 @@ export default function FresquePage() {
             <div className={styles.serviceText}>
               <span className={`${styles.eyebrow} reveal`}>Le geste artisanal</span>
               <h2 className={`${styles.headlineLg} reveal delay100`}>
-                Chaque détail participe à l&apos;émotion finale.
+                Chaque détail compte
               </h2>
               <p className={`${styles.bodyMd} reveal delay200`}>
-                Le support est observé, préparé et stabilisé avant la couleur. Le
-                choix des pigments, des textures, des passages et des finitions guide
-                ensuite le geste, pour obtenir une œuvre sensible, précise et faite
-                pour rester juste dans le temps.
+                Le support est d&apos;abord préparé avec soin avant l&apos;application de la
+                couleur. Le choix des teintes, des textures et des finitions permet de
+                créer une œuvre précise, harmonieuse et durable dans le temps.
               </p>
             </div>
           </div>
@@ -246,17 +238,14 @@ export default function FresquePage() {
 
         <section className={`${styles.section} ${styles.frescoQuoteSection}`}>
           <blockquote className="reveal">
-            &quot;Chaque mur possède déjà une histoire.
-            <span>
-              Mon travail consiste simplement à lui donner une nouvelle voix.&quot;
-            </span>
+            &quot;Et si votre mur devenait une œuvre ?&quot;
           </blockquote>
         </section>
 
         <section className={styles.darkBand}>
           <div className={styles.ctaInner}>
             <h2 className={`${styles.headlineLg} reveal`}>
-              Et si votre mur devenait une œuvre ?
+              Imaginons une fresque adaptée à votre espace
             </h2>
             <p className={`${styles.bodyLg} reveal delay100`}>
               Chaque projet débute par une discussion. Imaginons ensemble une fresque

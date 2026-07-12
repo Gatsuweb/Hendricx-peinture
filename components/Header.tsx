@@ -1,21 +1,21 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ButtonLink } from "./ButtonLink";
 import styles from "./Header.module.css";
-import Image from "next/image";
 
 const navItems = [
   { href: "/", label: "Accueil" },
-  { href: "/a-propos", label: "À Propos" },
+  { href: "/a-propos", label: "À propos" },
   {
     href: "/services",
     label: "Services",
     children: [
       { href: "/services/fresque", label: "Fresques" },
-      { href: "/services/renovation", label: "Renovations" },
+      { href: "/services/renovation", label: "Rénovation" },
     ],
   },
   { href: "/realisations", label: "Réalisations" },

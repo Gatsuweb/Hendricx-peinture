@@ -70,7 +70,7 @@ export function createMetadata({
       type: "website",
       images: [
         {
-          url: "/test-hero-hendricx.jpg",
+          url: "/photos/661744embeddedImage.jpg",
           width: 1200,
           height: 630,
           alt: "Hendricx Peinture, artisan peintre en Centre Bretagne",
@@ -81,7 +81,7 @@ export function createMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: ["/test-hero-hendricx.jpg"],
+      images: ["/photos/661744embeddedImage.jpg"],
     },
   };
 }
@@ -92,7 +92,7 @@ export const baseLocalBusinessSchema = {
   "@id": `${siteUrl}/#hendricx-peinture`,
   name: "Hendricx Peinture",
   url: siteUrl,
-  image: absoluteUrl("/test-hero-hendricx.jpg"),
+  image: absoluteUrl("/photos/661744embeddedImage.jpg"),
   logo: absoluteUrl("/logo-hendricx.png"),
   description:
     "Hendricx Peinture est un artisan peintre base a Paule, specialise en peinture interieure, peinture exterieure, renovation et fresques murales artistiques en Centre Bretagne.",

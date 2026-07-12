@@ -8,21 +8,21 @@ export function Footer() {
         <div className={styles.brandBlock}>
           <div className={styles.brand}>Hendricx Peinture</div>
           <p>
-            Artisan peintre a Paule : peinture interieure, exterieure, renovation et
-            fresques murales en Centre Bretagne.
+            Nicolas Hendricx, artisan peintre sur Paule, en Centre Bretagne.
+            Peinture intérieure, rénovation et fresques murales sur mesure.
           </p>
         </div>
         <div>
           <h4>Services</h4>
           <ul>
             <li>
-              <Link href="/services/renovation">Renovation interieure</Link>
+              <Link href="/services/renovation">Rénovation intérieure</Link>
             </li>
             <li>
               <Link href="/services/fresque">Fresque murale</Link>
             </li>
             <li>
-              <Link href="/realisations">Realisations</Link>
+              <Link href="/realisations">Réalisations</Link>
             </li>
           </ul>
         </div>

@@ -19,14 +19,10 @@ export const metadata: Metadata = createMetadata({
 });
 
 const images = {
-  heroLeft:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuDHeRqAo078W769rIgXgzjZEst8TOBzL3ua2CGg0MORtGB3N15WfyO-ahseas8PfJ4YhvoCHqfMLAaICL4hnsiEH2d6gCCOFwllZYVGbEMUjUloMTzvvnHBhrKdZCXsA2xM-XTgzdVzuOo4rUZ-2HlUBvdigDbx0R-a7Z9azln_a9eOJOxKGZvDKgeTY4-VvcYYs-OXPKp6KQD3k90N7T7JhZROOiGP4ENcBHVgXPbeU-dmlEHiV8xBgo9706r0EGJKTOES7hx1TU0",
-  heroRight:
-    "/test-hero-hendricx.jpg",
-  fresco:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuABtvKqmQHN6ZMgVE5FUR6lH0cfaBb-KU6jxn_JSmTOcR0N76qOcTZw7cHKx7ZzoS2vBP_jvApyTaEr8WCW-GNxoqGZwUydb0wT5XMY-1BalcxPv87eEC0AFS7FJz8PtxypUY0lN5Wx7TOC2V58EI3mrq_vOinjXbSYrF9gSzrUurTy7ULeCbY0Y7QMn2I4aiZD2jrZYYsqlvfmesNrjxbjoCMX2DEdWWWv_Nvvw2zpqdn65VUL5iX4SWb9buzgptGpxxeWuFasT-o",
-  renovation:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuB43Eql3v6eqjkc-WrF4CCGLFsHNtZwKLg4IJenv-cidXuCKGXCtRiJAiqxWoXOBcLAQTlltJAsai37ZYY4q2XxYRp5XW1fNSo3ulXQ3xDfH-fvLbxWz7i7EaPx6he0QM0fsW1vzj6Irg0gVIkdfiBaiRzPTUh37oTvT0zO8-jWZe1gZ-4En9-ZcNDVUdZm_mlMy7q7OalMXmvfTjoZtJAO0c8WWrfPCdPqrUo28pP7TwIFd7IUPeT_qT0ayyzPHd-t3Rb8uBmC_Zw",
+  heroLeft: "/photos/476836935_2078489489256904_6370289537618551027_n.jpg",
+  heroRight: "/photos/661744embeddedImage.jpg",
+  fresco: "/photos/2962805embeddedImage.jpg",
+  renovation: "/photos/477796924_2078489629256890_7221419132280354026_n.jpg",
 };
 
 const testimonials = [
@@ -52,24 +48,23 @@ const testimonials = [
 
 const faqs = [
   {
-    question: "Comment se déroule un premier rendez-vous ?",
+    question: "Comment se déroule le premier rendez-vous ?",
     answer:
-      "Nous échangeons sur vos envies, l'état des supports, les contraintes du lieu et le rendu attendu. Cela permet de définir une approche claire avant le devis.",
+      "On discute de vos envies, de l'état des murs et du lieu. Cela permet de préparer un devis adapté.",
   },
   {
-    question: "Intervenez-vous pour les particuliers et les professionnels ?",
+    question: "Travaillez-vous pour les particuliers et les professionnels ?",
     answer:
-      "Oui. Les projets peuvent concerner une piece de vie, une maison complete, un commerce, un bureau ou un lieu recevant du public.",
+      "Oui. Les projets peuvent concerner une pièce de vie, une maison complète, un commerce, un bureau ou un lieu recevant du public.",
   },
   {
-    question: "Pouvez-vous proposer une création de fresque sur mesure ?",
+    question: "Faites-vous des fresques sur mesure ?",
     answer:
-      "Oui. La création part de votre univers, de l'architecture du lieu et de l'ambiance souhaitée pour obtenir une fresque intégrée à l'espace.",
+      "Oui. La création de la fresque est créée selon votre style, votre lieu et l'ambiance souhaitée.",
   },
   {
-    question: "Faut-il préparer les murs avant votre passage ?",
-    answer:
-      "Non. La préparation fait partie du diagnostic et du savoir-faire : reprise, enduit, ponçage, impression et choix de finition selon le support.",
+    question: "Faut-il préparer les murs avant ?",
+    answer: "Non, nous nous occupons de toute la préparation des surfaces.",
   },
 ];
 
@@ -88,7 +83,7 @@ export default function Home() {
                   <span>FRESQUE</span>
                 </p>
                 <div className={`${styles.heroIntro} reveal delay300`}>
-                  <p>Artiste peintre, rénovation, fresque murale</p>
+                  <p>Artisan et artiste peintre, rénovation, neuf, fresque murale</p>
                   <p>
                     PEINTURE TRADITIONNELLE &amp; FRESQUE MURALE POUR DES ESPACES QUI
                     ONT DU CARACTERE.
@@ -96,9 +91,7 @@ export default function Home() {
                 </div>
               </div>
               <div className={`${styles.heroCtas} reveal delay300`}>
-                <ButtonLink href="/services">
-                  Découvrir les services
-                </ButtonLink>
+                <ButtonLink href="/services">Découvrir les services</ButtonLink>
                 <ButtonLink href="/realisations" tone="light">
                   Voir les réalisations
                 </ButtonLink>
@@ -143,14 +136,12 @@ export default function Home() {
             <span>Savoir-faire artisanal</span>
           </div>
           <h2 className={`${styles.headlineMd} reveal delay100`}>
-            Au croisement de la rigueur architecturale et de l&apos;expression
-            artistique libre.
+            Des murs qui vous ressemblent.
           </h2>
           <p className={`${styles.bodyLg} reveal delay200`}>
-            Nous n&apos;habillons pas seulement vos murs, nous leur donnons une voix.
-            De la préparation méticuleuse des supports à la création de fresques
-            uniques, chaque intervention est pensée comme une œuvre d&apos;art intégrée
-            à votre espace de vie.
+            Nous préparons chaque surface avec soin et créons des peintures ou fresques
+            uniques pour embellir votre espace. Chaque réalisation est pensée pour
+            s&apos;adapter à votre intérieur et refléter votre style.
           </p>
         </section>
 
@@ -163,15 +154,15 @@ export default function Home() {
               />
             </div>
             <div className={`${styles.serviceText} ${styles.textRight}`}>
-              <span className={`${styles.eyebrow} reveal`}>01 — Expression</span>
+              <span className={`${styles.eyebrow} reveal`}>01 - Expression</span>
               <h3 className={`${styles.headlineLg} reveal delay100`}>
-                Fresques Artistiques
+                Fresques artistiques
               </h3>
               <p className={`${styles.bodyMd} reveal delay200`}>
-                Des créations sur mesure qui transforment un mur nu en une toile
-                monumentale. Nous collaborons avec vous pour concevoir des œuvres qui
-                reflètent votre identité et s&apos;intègrent parfaitement à
-                l&apos;architecture du lieu.
+                Des créations uniques pour donner vie à vos murs. Nous réalisons des
+                fresques sur mesure qui transforment un mur vide en une œuvre
+                originale. Chaque projet est conçu avec vous pour refléter vos envies
+                et s&apos;intégrer naturellement à votre espace.
               </p>
               <div className={`${styles.tags} reveal delay300`}>
                 <span className={styles.tag}>Sur-mesure</span>
@@ -186,15 +177,14 @@ export default function Home() {
 
           <div className={styles.serviceGrid}>
             <div className={`${styles.serviceText} ${styles.textLeft}`}>
-              <span className={`${styles.eyebrow} reveal`}>02 — Précision</span>
+              <span className={`${styles.eyebrow} reveal`}>02 - Précision</span>
               <h3 className={`${styles.headlineLg} reveal delay100`}>
-                Rénovations d&apos;Intérieur
+                Rénovation d&apos;intérieur
               </h3>
               <p className={`${styles.bodyMd} reveal delay200`}>
-                L&apos;excellence technique au service des espaces exigeants. Nous
-                appliquons des finitions haut de gamme, des enduits minéraux aux
-                peintures mates veloutées, pour révéler la beauté pure des volumes
-                architecturaux.
+                Des finitions soignées pour sublimer vos espaces. Nous réalisons des
+                travaux de peinture et de finition avec des matériaux de qualité, pour
+                redonner vie à vos murs et mettre en valeur votre intérieur.
               </p>
               <div className={`${styles.tags} reveal delay300`}>
                 <span className={styles.tag}>Finitions Premium</span>
@@ -218,25 +208,25 @@ export default function Home() {
           <div className={styles.sectionIntro}>
             <span className={`${styles.eyebrow} reveal`}>Confiance</span>
             <h2 className={`${styles.headlineLg} reveal delay100`}>
-              Des finitions qui se jugent dans le détail.
+              Le détail fait la différence.
             </h2>
             <p className={`${styles.bodyMd} reveal delay200`}>
-              Préparation des supports, tenue du chantier, justesse des teintes et
-              finitions durables : chaque projet est mené avec la même exigence.
+              Préparation soignée, chantier propre et finitions durables : nous
+              réalisons chaque projet avec rigueur et précision.
             </p>
           </div>
           <div className={styles.statsGrid}>
             <div className={`${styles.statItem} reveal`}>
               <strong>Sur mesure</strong>
-              <span>Chaque intervention part de votre lieu, pas d&apos;une formule.</span>
+              <span>Chaque projet est conçu en fonction de votre espace et de vos besoins.</span>
             </div>
             <div className={`${styles.statItem} reveal delay100`}>
               <strong>Conseil</strong>
-              <span>Choix des matières, couleurs et finitions avant travaux.</span>
+              <span>Accompagnement dans le choix des couleurs et des finitions avant les travaux.</span>
             </div>
             <div className={`${styles.statItem} reveal delay200`}>
-              <strong>Chantier soigne</strong>
-              <span>Protection, précision et propreté jusqu&apos;à la réception.</span>
+              <strong>Chantier soigné</strong>
+              <span>Protection des espaces, travail précis et nettoyage complet jusqu&apos;à la fin des travaux.</span>
             </div>
           </div>
         </section>
@@ -246,7 +236,7 @@ export default function Home() {
             <div className={styles.sectionIntro}>
               <span className={`${styles.eyebrow} reveal`}>Avis clients</span>
               <h2 className={`${styles.headlineMd} reveal delay100`}>
-                Ils nous confient leurs murs parce que le rendu doit durer.
+                Ils nous ont confié leur projet.
               </h2>
             </div>
             <div className={styles.testimonialGrid}>
@@ -276,9 +266,8 @@ export default function Home() {
               Un atelier mobile pour vos projets de peinture et fresque.
             </h2>
             <p className={`${styles.bodyMd} reveal delay200`}>
-              Nous nous déplaçons pour évaluer les supports, prendre les mesures et
-              construire une proposition adaptée à votre intérieur ou votre lieu
-              professionnel.
+              Nous venons sur place pour évaluer vos besoins, prendre les mesures et
+              vous proposer un projet sur mesure adapté à votre espace.
             </p>
             <div className={`${styles.tags} reveal delay300`}>
               <span className={styles.tag}>Devis sur place</span>
@@ -291,8 +280,8 @@ export default function Home() {
             <div>
               <h3>Zone d&apos;intervention</h3>
               <p>
-                Rendez-vous et chantiers sur demande. Contactez-nous pour vérifier la
-                faisabilité, les délais et organiser une première visite.
+                Sur rendez-vous. Contactez-nous pour étudier votre projet, vérifier
+                les délais et organiser une première visite sur place.
               </p>
               <ButtonLink href="/contact" tone="line">
                 Planifier une visite
@@ -305,7 +294,7 @@ export default function Home() {
           <div className={styles.sectionIntro}>
             <span className={`${styles.eyebrow} reveal`}>Questions fréquentes</span>
             <h2 className={`${styles.headlineMd} reveal delay100`}>
-              Les points à clarifier avant de lancer votre projet.
+              Les points à savoir avant de commencer votre projet.
             </h2>
           </div>
           <div className={styles.faqList}>
@@ -328,14 +317,13 @@ export default function Home() {
 
         <section className={styles.ctaBand}>
           <div className={styles.ctaInner}>
-            <h2 className={`${styles.headlineLg} reveal`}>Donnez Vie à Vos Murs</h2>
+            <h2 className={`${styles.headlineLg} reveal`}>Donnez vie à vos murs</h2>
             <p className={`${styles.bodyLg} reveal delay100`}>
-              Chaque projet commence par une rencontre. Discutons de vos envies, de
-              vos espaces et de la manière dont nous pouvons y apporter notre
-              savoir-faire.
+              Chaque projet commence par une discussion. On échange sur vos envies et
+              votre espace pour imaginer une réalisation adaptée.
             </p>
             <ButtonLink href="/contact" className="reveal delay200">
-              Nous Contacter
+              Nous contacter
             </ButtonLink>
           </div>
         </section>

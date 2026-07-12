@@ -16,8 +16,8 @@ type FrescoProject = {
 type RenovationProject = {
   type: "renovation";
   title: string;
-  beforeImage: string;
-  afterImage: string;
+  text: string;
+  image: string;
   className: "projectWide" | "projectTall" | "projectHalf";
 };
 
@@ -26,26 +26,23 @@ type GalleryProject = FrescoProject | RenovationProject;
 const frescoProjects: FrescoProject[] = [
   {
     type: "fresque",
-    title: "L'Horizon Abstrait",
-    text: "Residence contemporaine, fresque monumentale et finitions texturees.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuB61gPt-df3paHZX6mNFFRa9e5xN_ZzJoivVaMURR3xtVPXg3-8wnROHFckykks_UnkbdkEfrn9DdNFxWBthFoYmx_CWE4s51RT7_oRhyzdPprT-1QovdeXrboFAPIRu1IDluIEQFPzGyuptQO09T0priKiqe4x1BOb9KgnU0II_Uwu-bOmKvyq_hCre0Ym9q61iqcH-Z95my_gCnNuj7wcUqOOWOMqUqGPUzc5bTkrp3iP0NAZG9BnekI1MjMT5HSnJqnQo2HiqYg",
+    title: "Route au coucher du soleil",
+    text: "Fresque monumentale, couleurs vives et composition graphique.",
+    image: "/photos/661744embeddedImage.jpg",
     className: "projectWide",
   },
   {
     type: "fresque",
-    title: "Atelier Loft",
-    text: "Murale en cours dans un volume haut et industriel.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDY2veYLDhzNiFrE5y9DioL4vTdxXl5BZlEJOKbpjzT7kFYsrDOk6nhoCNIJnGcWAyq7KUBi1dbtawp2QMo3SwIGBZcVawLP5lgPZ6hhfcoY0z2zxym5Yz-RpVFRYDPbdxmQiRE0CjmrW5LRauPPtJ1HKOwr6KJfguM4obtCIlwOQ8-SbZsow6YXzCrRzIs-Gpx9RoJj6g_1RARAaOGfwbKZKgTgMz-J9TO7Zl93WpHOnwUwyp_laumW_Qlt7OHm4Mw_FwX7RWq7Og",
+    title: "Fresque en cours",
+    text: "Murale peinte sur place, du dessin à la mise en couleur.",
+    image: "/photos/187393embeddedImage.jpg",
     className: "projectTall",
   },
   {
     type: "fresque",
-    title: "Composition Murale",
-    text: "Creation graphique adaptee aux lignes, aux volumes et a la lumiere du lieu.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuB61gPt-df3paHZX6mNFFRa9e5xN_ZzJoivVaMURR3xtVPXg3-8wnROHFckykks_UnkbdkEfrn9DdNFxWBthFoYmx_CWE4s51RT7_oRhyzdPprT-1QovdeXrboFAPIRu1IDluIEQFPzGyuptQO09T0priKiqe4x1BOb9KgnU0II_Uwu-bOmKvyq_hCre0Ym9q61iqcH-Z95my_gCnNuj7wcUqOOWOMqUqGPUzc5bTkrp3iP0NAZG9BnekI1MjMT5HSnJqnQo2HiqYg",
+    title: "Terrain de sport",
+    text: "Création graphique adaptée aux volumes et à l'usage du lieu.",
+    image: "/photos/2962805embeddedImage.jpg",
     className: "projectHalf",
   },
 ];
@@ -53,29 +50,23 @@ const frescoProjects: FrescoProject[] = [
 const renovationProjects: RenovationProject[] = [
   {
     type: "renovation",
-    title: "Renovation interieure avant apres",
-    beforeImage:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBpmUzd253qSVATnsQb9EZnFx5PQInQiLxVWHcw1stdDAQ36QQeVthAwvfoFKH4goCwFoaiLFUZgkbn3fam_q1zfDeGqLqu8-iSxeQPgqd--rjV99Bmi-Cr4seETwcFFhDJQyH3E5gFKbGkrc8QQjkoBHo5H-mToD2BQy0laUSLOpEwkEpQK2KZ9gvZysh3GTYszN2LP3WQy59Bd80FpTOBcHdDgoBxjaIrL4ssiPJ0VCuXJwPiqMhq0sSiPzNDSZWYMvbSlnl6hdw",
-    afterImage:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAR2ga3-bzCJsSOUxfvA23VnRqT5rkm6v6KgZBuBei17xEqWwhd06-QQ7p3HlCqBex3lPqL5QYAiJNyhRmmzadMZ81xBHuUqSmw617kJR3X5A9p4Br21fU6wln_KrvURHwwWICLgLeOsguGz_hB8oMjFM3vF08XoduJwPWzQHU5bjgrzIqM2zluPgqBiTEtKITYXEP4QbrgMRhcpvmZNpdGlUYxXLb48kJVQzO1vJrDRNY6K2R4y0nlGQ_J3AkCQAxdUMfrU1kGPMU",
+    title: "Façade avant / après",
+    text: "Lecture directe de l'état initial et du résultat fini sur une même image.",
+    image: "/photos/468298020_2022966138142573_7311619731374257905_n.jpg",
     className: "projectTall",
   },
   {
     type: "renovation",
-    title: "Reprise de supports et finition mate",
-    beforeImage:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAR2ga3-bzCJsSOUxfvA23VnRqT5rkm6v6KgZBuBei17xEqWwhd06-QQ7p3HlCqBex3lPqL5QYAiJNyhRmmzadMZ81xBHuUqSmw617kJR3X5A9p4Br21fU6wln_KrvURHwwWICLgLeOsguGz_hB8oMjFM3vF08XoduJwPWzQHU5bjgrzIqM2zluPgqBiTEtKITYXEP4QbrgMRhcpvmZNpdGlUYxXLb48kJVQzO1vJrDRNY6K2R4y0nlGQ_J3AkCQAxdUMfrU1kGPMU",
-    afterImage:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBpmUzd253qSVATnsQb9EZnFx5PQInQiLxVWHcw1stdDAQ36QQeVthAwvfoFKH4goCwFoaiLFUZgkbn3fam_q1zfDeGqLqu8-iSxeQPgqd--rjV99Bmi-Cr4seETwcFFhDJQyH3E5gFKbGkrc8QQjkoBHo5H-mToD2BQy0laUSLOpEwkEpQK2KZ9gvZysh3GTYszN2LP3WQy59Bd80FpTOBcHdDgoBxjaIrL4ssiPJ0VCuXJwPiqMhq0sSiPzNDSZWYMvbSlnl6hdw",
+    title: "Pignon extérieur avant / après",
+    text: "Rénovation extérieure présentée en montage avant / après.",
+    image: "/photos/480326737_2084649271974259_8976282591705393876_n.jpg",
     className: "projectHalf",
   },
   {
     type: "renovation",
-    title: "Harmonie de couleurs et finitions",
-    beforeImage:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBpmUzd253qSVATnsQb9EZnFx5PQInQiLxVWHcw1stdDAQ36QQeVthAwvfoFKH4goCwFoaiLFUZgkbn3fam_q1zfDeGqLqu8-iSxeQPgqd--rjV99Bmi-Cr4seETwcFFhDJQyH3E5gFKbGkrc8QQjkoBHo5H-mToD2BQy0laUSLOpEwkEpQK2KZ9gvZysh3GTYszN2LP3WQy59Bd80FpTOBcHdDgoBxjaIrL4ssiPJ0VCuXJwPiqMhq0sSiPzNDSZWYMvbSlnl6hdw",
-    afterImage:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAR2ga3-bzCJsSOUxfvA23VnRqT5rkm6v6KgZBuBei17xEqWwhd06-QQ7p3HlCqBex3lPqL5QYAiJNyhRmmzadMZ81xBHuUqSmw617kJR3X5A9p4Br21fU6wln_KrvURHwwWICLgLeOsguGz_hB8oMjFM3vF08XoduJwPWzQHU5bjgrzIqM2zluPgqBiTEtKITYXEP4QbrgMRhcpvmZNpdGlUYxXLb48kJVQzO1vJrDRNY6K2R4y0nlGQ_J3AkCQAxdUMfrU1kGPMU",
+    title: "Rénovation intérieure avant / après",
+    text: "Chantier intérieur documenté en montage avant / après.",
+    image: "/photos/6974435embeddedImage.jpg",
     className: "projectWide",
   },
 ];
@@ -83,7 +74,7 @@ const renovationProjects: RenovationProject[] = [
 const filterLabels: Record<FilterKey, string> = {
   all: "Tout",
   fresques: "Fresques",
-  renovations: "Renovations",
+  renovations: "Rénovations",
 };
 
 export function RealisationsGallery() {
@@ -98,9 +89,7 @@ export function RealisationsGallery() {
       return "";
     }
 
-    return selectedProject.type === "fresque"
-      ? selectedProject.title
-      : "Renovation - avant / apres";
+    return selectedProject.title;
   }, [selectedProject]);
 
   useEffect(() => {
@@ -126,7 +115,7 @@ export function RealisationsGallery() {
   return (
     <>
       <section className={`${styles.section} ${styles.galleryFilterSection}`}>
-        <div className={styles.galleryFilterBar} aria-label="Filtrer les realisations">
+        <div className={styles.galleryFilterBar} aria-label="Filtrer les réalisations">
           {(Object.keys(filterLabels) as FilterKey[]).map((filter) => (
             <button
               key={filter}
@@ -146,11 +135,11 @@ export function RealisationsGallery() {
           <div className={styles.galleryHeader}>
             <span className={`${styles.eyebrow} reveal`}>Fresques murales</span>
             <h2 className={`${styles.headlineLg} reveal delay100`}>
-              Des murs traites comme des compositions uniques
+              Des murs traités comme des compositions uniques
             </h2>
             <p className={`${styles.bodyMd} reveal delay200`}>
-              Des creations sur mesure pour donner une identite forte a un lieu, du
-              croquis a la mise en couleur finale.
+              Des créations sur mesure pour donner une identité forte à un lieu, du
+              croquis à la mise en couleur finale.
             </p>
           </div>
           <div className={styles.galleryGrid}>
@@ -175,13 +164,13 @@ export function RealisationsGallery() {
       {showRenovations ? (
         <section className={`${styles.section} ${styles.realisationSection}`}>
           <div className={styles.galleryHeader}>
-            <span className={`${styles.eyebrow} reveal`}>Renovations</span>
+            <span className={`${styles.eyebrow} reveal`}>Rénovations</span>
             <h2 className={`${styles.headlineLg} reveal delay100`}>
-              Avant / apres propres, lisibles et professionnels
+              Avant / après propres, lisibles et professionnels
             </h2>
             <p className={`${styles.bodyMd} reveal delay200`}>
-              Une lecture directe du chantier : etat initial, preparation des supports,
-              puis finition soignee sans surcharge de texte.
+              Une lecture directe du chantier : état initial, préparation des supports,
+              puis finition soignée sans surcharge de texte.
             </p>
           </div>
           <div className={styles.galleryGrid}>
@@ -189,19 +178,14 @@ export function RealisationsGallery() {
               <button
                 key={project.title}
                 type="button"
-                className={`${styles.projectCard} ${styles.beforeAfterCard} ${
-                  styles[project.className]
-                } reveal`}
+                className={`${styles.projectCard} ${styles[project.className]} reveal`}
                 onClick={() => setSelectedProject(project)}
                 aria-label={`Ouvrir ${project.title}`}
               >
-                <span className={styles.beforeAfterPane}>
-                  <img src={project.beforeImage} alt={`${project.title} avant`} />
-                  <span>Avant</span>
-                </span>
-                <span className={styles.beforeAfterPane}>
-                  <img src={project.afterImage} alt={`${project.title} apres`} />
-                  <span>Apres</span>
+                <img src={project.image} alt={project.title} />
+                <span className={styles.projectOverlay}>
+                  <strong>{project.title}</strong>
+                  <span>{project.text}</span>
                 </span>
               </button>
             ))}
@@ -226,41 +210,15 @@ export function RealisationsGallery() {
               type="button"
               className={styles.projectModalClose}
               onClick={() => setSelectedProject(null)}
-              aria-label="Fermer la realisation"
+              aria-label="Fermer la réalisation"
             >
               x
             </button>
-            {selectedProject.type === "fresque" ? (
-              <>
-                <img src={selectedProject.image} alt={selectedProject.title} />
-                <div className={styles.projectModalCaption}>
-                  <h3>{selectedProject.title}</h3>
-                  <p>{selectedProject.text}</p>
-                </div>
-              </>
-            ) : (
-              <>
-                <div className={styles.projectModalBeforeAfter}>
-                  <figure>
-                    <img
-                      src={selectedProject.beforeImage}
-                      alt={`${selectedProject.title} avant`}
-                    />
-                    <figcaption>Avant</figcaption>
-                  </figure>
-                  <figure>
-                    <img
-                      src={selectedProject.afterImage}
-                      alt={`${selectedProject.title} apres`}
-                    />
-                    <figcaption>Apres</figcaption>
-                  </figure>
-                </div>
-                <div className={styles.projectModalCaption}>
-                  <h3>Renovation avant / apres</h3>
-                </div>
-              </>
-            )}
+            <img src={selectedProject.image} alt={selectedProject.title} />
+            <div className={styles.projectModalCaption}>
+              <h3>{selectedProject.title}</h3>
+              <p>{selectedProject.text}</p>
+            </div>
           </div>
         </div>
       ) : null}
