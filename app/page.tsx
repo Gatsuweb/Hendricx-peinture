@@ -82,13 +82,6 @@ export default function Home() {
                   <span>PEINTURE</span>
                   <span>FRESQUE</span>
                 </p>
-                <div className={`${styles.heroIntro} reveal delay300`}>
-                  <p>Artisan et artiste peintre, rénovation, neuf, fresque murale</p>
-                  <p>
-                    PEINTURE TRADITIONNELLE &amp; FRESQUE MURALE POUR DES ESPACES QUI
-                    ONT DU CARACTERE.
-                  </p>
-                </div>
               </div>
               <div className={`${styles.heroCtas} reveal delay300`}>
                 <ButtonLink href="/services">Découvrir les services</ButtonLink>
@@ -98,10 +91,19 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className={styles.heroIntroOverlay}>
+            <div className={`${styles.heroIntro} reveal delay300`}>
+              <p>Artisan et artiste peintre, rénovation, neuf, fresque murale</p>
+              <p>
+                PEINTURE TRADITIONNELLE &amp; FRESQUE MURALE POUR DES ESPACES QUI ONT
+                DU CARACTERE.
+              </p>
+            </div>
+          </div>
           <div className={styles.heroCtaOverlay}>
             <div className={`${styles.heroCtas} reveal delay300`}>
               <ButtonLink href="/services">Découvrir les services</ButtonLink>
-              <ButtonLink href="/realisations" tone="light">
+              <ButtonLink href="/realisations" tone="loner">
                 Voir les réalisations
               </ButtonLink>
             </div>
