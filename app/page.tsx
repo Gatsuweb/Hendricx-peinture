@@ -103,7 +103,7 @@ export default function Home() {
           <div className={styles.heroCtaOverlay}>
             <div className={`${styles.heroCtas} reveal delay300`}>
               <ButtonLink href="/services">Découvrir les services</ButtonLink>
-              <ButtonLink href="/realisations" tone="loner">
+              <ButtonLink href="/realisations" tone="line">
                 Voir les réalisations
               </ButtonLink>
             </div>
