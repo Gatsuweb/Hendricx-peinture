@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { ButtonLink } from "@/components/ButtonLink";
 import { PageShell } from "@/components/PageShell";
-import { createMetadata } from "../seo";
+import { localPages } from "../local-pages";
+import { createMetadata, publishedLocalSlugs } from "../seo";
 import styles from "../site.module.css";
 
 export const metadata: Metadata = createMetadata({
@@ -17,6 +18,8 @@ export const metadata: Metadata = createMetadata({
 });
 
 export default function ServicesPage() {
+  const publishedLocalPages = publishedLocalSlugs.map((slug) => localPages[slug]);
+
   return (
     <PageShell>
       <main>
@@ -86,18 +89,11 @@ export default function ServicesPage() {
             </h2>
           </div>
           <div className={styles.localLinkGrid}>
-            <ButtonLink href="/peintre-carhaix-plouguer" tone="line">
-              Peintre à Carhaix-Plouguer
-            </ButtonLink>
-            <ButtonLink href="/peintre-rostrenen" tone="line">
-              Peintre à Rostrenen
-            </ButtonLink>
-            <ButtonLink href="/peintre-gourin" tone="line">
-              Peintre à Gourin
-            </ButtonLink>
-            <ButtonLink href="/peintre-huelgoat" tone="line">
-              Peintre à Huelgoat
-            </ButtonLink>
+            {publishedLocalPages.map((page) => (
+              <ButtonLink href={`/${page.slug}`} tone="line" key={page.slug}>
+                Peintre à {page.city}
+              </ButtonLink>
+            ))}
           </div>
         </section>
       </main>

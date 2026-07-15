@@ -28,21 +28,21 @@ const images = {
 const testimonials = [
   {
     quote:
-      "Un travail d'une précision rare. Les murs ont été repris, préparés et finis avec un soin que l'on remarque tout de suite.",
-    author: "Claire M.",
-    context: "Rénovation d'un séjour",
+      "ULe travail est soigné, propre et réalisé avec beaucoup de sérieux. Je recommande vraiment Hendricx Peinture sans hésitation",
+    author: "Ivan D.",
+    context: "Peinture séjour",
   },
   {
     quote:
-      "La fresque a donné une vraie identité à notre espace. Le projet a été compris rapidement et le résultat dépasse nos attentes.",
-    author: "Atelier Prisme",
-    context: "Fresque murale professionnelle",
+      "Artisan très sérieux et méticuleux. De bon conseils et toujours sympathique. Je recommande",
+    author: "Arnaud B.",
+    context: "Rénovation",
   },
   {
     quote:
-      "Chantier propre, conseils justes et finitions impeccables. On sent la maîtrise du support avant même la mise en couleur.",
-    author: "Marc D.",
-    context: "Maison particulière",
+      "Réalisation des peintures dans notre maison neuve. Très pro et appliqué dans son travail. Bon échange et tarif plus que correct !",
+    author: "Pauline LB..",
+    context: "Peinture maison",
   },
 ];
 

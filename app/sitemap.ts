@@ -9,6 +9,9 @@ const staticRoutes = [
   { path: "/realisations", priority: 0.8 },
   { path: "/a-propos", priority: 0.7 },
   { path: "/contact", priority: 0.9 },
+  { path: "/mentions-legales", priority: 0.3 },
+  { path: "/politique-confidentialite", priority: 0.3 },
+  { path: "/conditions-generales", priority: 0.3 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

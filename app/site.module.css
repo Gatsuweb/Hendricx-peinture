@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   display: flex;
-  min-height: 100vh;
+  min-height: 100svh;
   flex-direction: column;
   overflow: hidden;
   padding-top: 80px;
@@ -24,7 +24,7 @@
 
 .displayTitle {
   max-width: none;
-  font-size: clamp(42px, 14vw, 16rem);
+  font-size: clamp(42px, min(13vw, 22vh), 16rem);
   font-weight: 600;
   line-height: 1.1;
   letter-spacing: 2px;
@@ -103,7 +103,7 @@
   color: white;
   pointer-events: none;
   text-align: center;
-  transform: translateY(clamp(118px, 14vw, 220px));
+  transform: translateY(clamp(96px, min(14vw, 18vh), 190px));
 }
 
 .heroIntro p:first-child {
@@ -150,7 +150,7 @@
   justify-content: center;
   padding: 0 var(--margin-mobile);
   pointer-events: none;
-  transform: translateY(clamp(180px, 18vw, 320px));
+  transform: translateY(clamp(205px, min(20vw, 31vh), 300px));
 }
 
 .heroPanel {
@@ -1399,6 +1399,49 @@
   gap: 32px;
 }
 
+.legalSection {
+  padding-top: 0;
+}
+
+.legalContent {
+  display: grid;
+  max-width: 980px;
+  gap: 32px;
+}
+
+.legalBlock {
+  display: grid;
+  gap: 14px;
+  border-top: 1px solid rgb(0 139 139 / 24%);
+  padding-top: 28px;
+}
+
+.legalBlock h2 {
+  color: var(--primary);
+  font-family: var(--font-headline);
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 600;
+  line-height: 1.12;
+}
+
+.legalBlock p {
+  max-width: 760px;
+  color: var(--on-surface-variant);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.legalBlock a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.legalBlock strong {
+  color: var(--brand-neutral);
+  font-weight: 700;
+}
+
 .fieldGroup {
   display: grid;
   gap: 16px;
@@ -1677,6 +1720,54 @@
     grid-template-columns: 5fr 7fr;
   }
 
+}
+
+@media (min-width: 768px) and (max-height: 820px) {
+  .heroTitleGroup {
+    transform: translateY(clamp(-44px, -5vh, -24px));
+  }
+
+  .heroIntro {
+    gap: 8px;
+    margin-top: 0;
+  }
+
+  .heroIntro p:first-child {
+    font-size: clamp(26px, min(3vw, 5vh), 42px);
+  }
+
+  .heroIntro p:last-child {
+    max-width: 680px;
+    font-size: clamp(9px, min(0.9vw, 1.7vh), 12px);
+    line-height: 1.45;
+  }
+
+  .heroCtas {
+    gap: clamp(14px, 2vw, 28px);
+    margin-top: 0;
+  }
+
+  .scrollIndicator {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .displayTitle {
+    font-size: clamp(84px, min(12vw, 20vh), 150px);
+  }
+
+  .heroKicker {
+    margin-top: clamp(6px, 1.2vw, 14px);
+  }
+
+  .heroIntroOverlay {
+    transform: translateY(clamp(92px, min(12vw, 16vh), 128px));
+  }
+
+  .heroCtaOverlay {
+    transform: translateY(clamp(210px, min(21vw, 32vh), 245px));
+  }
 }
 
 @media (max-width: 600px) {

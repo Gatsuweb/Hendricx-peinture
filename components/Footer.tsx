@@ -30,13 +30,27 @@ export function Footer() {
           <h4>Zones</h4>
           <ul>
             <li>
-              <Link href="/">Peintre Carhaix-Plouguer</Link>
+              <Link href="/peintre-carhaix-plouguer">Peintre Carhaix-Plouguer</Link>
             </li>
             <li>
-              <Link href="/">Peintre Rostrenen</Link>
+              <Link href="/peintre-rostrenen">Peintre Rostrenen</Link>
             </li>
             <li>
-              <Link href="/">Devis peinture</Link>
+              <Link href="/contact">Devis peinture</Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Informations</h4>
+          <ul>
+            <li>
+              <Link href="/mentions-legales">Mentions legales</Link>
+            </li>
+            <li>
+              <Link href="/politique-confidentialite">Confidentialite</Link>
+            </li>
+            <li>
+              <Link href="/conditions-generales">Conditions generales</Link>
             </li>
           </ul>
         </div>
