@@ -18,12 +18,14 @@ export const serviceArea = [
   "Treogan",
 ];
 
-export const publishedLocalSlugs = [
+export const publishedLocalSlugs: string[] = [];
+
+export const scheduledLocalSlugs = [
   "peintre-carhaix-plouguer",
   "peintre-rostrenen",
+  "peintre-gourin",
+  "peintre-huelgoat",
 ];
-
-export const scheduledLocalSlugs = ["peintre-gourin", "peintre-huelgoat"];
 
 export function absoluteUrl(path = "/") {
   return new URL(path, siteUrl).toString();

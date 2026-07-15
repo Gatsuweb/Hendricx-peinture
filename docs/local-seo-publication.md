@@ -22,7 +22,9 @@ Au signal de publication, toutes les deux semaines :
 
 Ordre recommande :
 
-1. `peintre-gourin`
-2. `peintre-huelgoat`
+1. `peintre-carhaix-plouguer`
+2. `peintre-rostrenen`
+3. `peintre-gourin`
+4. `peintre-huelgoat`
 
 Ne pas publier deux pages locales en meme temps si l'objectif est une cadence progressive toutes les deux semaines.

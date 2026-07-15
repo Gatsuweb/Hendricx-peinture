@@ -31,6 +31,7 @@
 
 .footer p,
 .footer a,
+.footer li span,
 .bottom {
   color: var(--on-surface-variant);
   font-size: 16px;

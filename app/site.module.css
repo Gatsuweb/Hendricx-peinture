@@ -657,6 +657,10 @@
   align-content: start;
 }
 
+.localSeoLinks:has(.localLinkGrid:empty) {
+  display: none;
+}
+
 .renovationScopeGrid {
   display: grid;
   gap: var(--gutter);
