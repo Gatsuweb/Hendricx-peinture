@@ -28,7 +28,7 @@ const images = {
 const testimonials = [
   {
     quote:
-      "ULe travail est soigné, propre et réalisé avec beaucoup de sérieux. Je recommande vraiment Hendricx Peinture sans hésitation",
+      "Le travail est soigné, propre et réalisé avec beaucoup de sérieux. Je recommande vraiment Hendricx Peinture sans hésitation",
     author: "Ivan D.",
     context: "Peinture séjour",
   },
