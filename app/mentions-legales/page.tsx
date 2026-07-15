@@ -31,24 +31,35 @@ export default function MentionsLegalesPage() {
               <h2>Editeur du site</h2>
               <p>
                 Hendricx Peinture, entreprise individuelle de Nicolas Hendricx,
-                artisan peintre base a Paule, 22340, France.
+                entreprise de peinture basee a Paule, 22340, France.
               </p>
               <p>
-                Adresse professionnelle complete : <strong>a completer</strong>
+                Adresse professionnelle : <strong>4 Keroullaire, 22340 Paule, France</strong>
               </p>
               <p>
-                SIRET / SIREN / immatriculation : <strong>a completer</strong>
+                SIREN : <strong>839 592 094</strong>
               </p>
               <p>
-                TVA intracommunautaire, si applicable : <strong>a completer</strong>
+                SIRET du siege : <strong>839 592 094 00016</strong>
+              </p>
+              <p>
+                Forme juridique : <strong>entrepreneur individuel</strong>
+              </p>
+              <p>
+                Numero de TVA intracommunautaire : <strong>FR89839592094</strong>
+              </p>
+              <p>
+                Inscription au RCS : <strong>non inscrit</strong>
+              </p>
+              <p>
+                Inscription au RNE : <strong>inscrit le 18/05/2018</strong>
               </p>
               <p>
                 Contact :{" "}
-                <a href="mailto:contact@hendricx-peinture.fr">
-                  contact@hendricx-peinture.fr
+                <a href="mailto:n.hendricx@laposte.net">
+                  n.hendricx@laposte.net
                 </a>
               </p>
-              <p>Telephone : <strong>a completer</strong></p>
             </article>
 
             <article className={styles.legalBlock}>
@@ -59,13 +70,25 @@ export default function MentionsLegalesPage() {
             <article className={styles.legalBlock}>
               <h2>Hebergement</h2>
               <p>
-                Hebergeur du site : <strong>a completer</strong>
+                Hebergeur du site : <strong>Vercel Inc.</strong>
               </p>
               <p>
-                Adresse de l&apos;hebergeur : <strong>a completer</strong>
+                Adresse de l&apos;hebergeur :{" "}
+                <strong>
+                  440 N Barranca Avenue #4133, Covina, CA 91723, United States
+                </strong>
               </p>
               <p>
-                Telephone de l&apos;hebergeur : <strong>a completer</strong>
+                Contact hebergeur :{" "}
+                <a href="https://vercel.com/help">https://vercel.com/help</a>
+              </p>
+              <p>
+                E-mail hebergeur :{" "}
+                <a href="mailto:privacy@vercel.com">privacy@vercel.com</a>
+              </p>
+              <p>
+                Telephone de l&apos;hebergeur :{" "}
+                <strong>non communique publiquement par Vercel</strong>
               </p>
             </article>
 

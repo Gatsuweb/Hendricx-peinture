@@ -96,10 +96,14 @@ export const baseLocalBusinessSchema = {
   url: siteUrl,
   image: absoluteUrl("/photos/661744embeddedImage.jpg"),
   logo: absoluteUrl("/logo-hendricx.png"),
+  email: "n.hendricx@laposte.net",
+  vatID: "FR89839592094",
+  taxID: "839592094",
   description:
     "Hendricx Peinture est un artisan peintre base a Paule, specialise en peinture interieure, peinture exterieure, renovation et fresques murales artistiques en Centre Bretagne.",
   address: {
     "@type": "PostalAddress",
+    streetAddress: "4 Keroullaire",
     addressLocality: "Paule",
     postalCode: "22340",
     addressCountry: "FR",

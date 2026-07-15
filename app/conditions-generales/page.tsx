@@ -57,11 +57,12 @@ export default function ConditionsGeneralesPage() {
               <h2>Prix et paiement</h2>
               <p>
                 Les prix sont indiques sur devis. Mention TVA applicable :
-                <strong> a completer selon le regime de l&apos;entreprise</strong>.
+                <strong> numero de TVA intracommunautaire FR89839592094</strong>.
               </p>
               <p>
                 Modalites d&apos;acompte, paiement, penalites de retard et frais
-                eventuels : <strong>a completer</strong>.
+                eventuels sont precisees sur le devis, la facture ou tout autre
+                document contractuel remis au client.
               </p>
             </article>
 
@@ -82,7 +83,8 @@ export default function ConditionsGeneralesPage() {
                 Pour les clients consommateurs, les conditions d&apos;exercice du
                 droit de retractation dependent du contexte de conclusion du
                 contrat, notamment en cas de contrat conclu a distance ou hors
-                etablissement. Modalites exactes : <strong>a completer</strong>.
+                etablissement. Les informations utiles sont communiquees au
+                client lorsque ce droit s&apos;applique.
               </p>
             </article>
 
@@ -93,7 +95,7 @@ export default function ConditionsGeneralesPage() {
                 supports constates et les travaux prevus au devis. Les garanties
                 legales applicables et les eventuelles garanties commerciales
                 doivent etre precisees au devis ou dans les documents
-                contractuels. Details : <strong>a completer</strong>.
+                contractuels remis au client.
               </p>
             </article>
 
@@ -107,7 +109,7 @@ export default function ConditionsGeneralesPage() {
               </p>
               <p>
                 Mediateur designe, coordonnees et lien de saisine :
-                <strong> a completer</strong>.
+                <strong> a completer apres designation du mediateur</strong>.
               </p>
             </article>
           </div>

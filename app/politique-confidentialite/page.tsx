@@ -38,8 +38,8 @@ export default function PolitiqueConfidentialitePage() {
               </p>
               <p>
                 Contact donnees personnelles :{" "}
-                <a href="mailto:contact@hendricx-peinture.fr">
-                  contact@hendricx-peinture.fr
+                <a href="mailto:n.hendricx@laposte.net">
+                  n.hendricx@laposte.net
                 </a>
               </p>
             </article>
@@ -70,8 +70,10 @@ export default function PolitiqueConfidentialitePage() {
               <h2>Duree de conservation</h2>
               <p>
                 Les donnees liees a une demande sans suite sont conservees pour
-                une duree raisonnable a compter du dernier echange. Duree exacte
-                a definir par l&apos;entreprise : <strong>a completer</strong>.
+                une duree maximale de trois ans a compter du dernier echange.
+                Les documents lies a une relation commerciale peuvent etre
+                conserves plus longtemps lorsque la loi l&apos;impose, notamment
+                pour les obligations comptables ou la preuve d&apos;une prestation.
               </p>
             </article>
 
@@ -96,8 +98,8 @@ export default function PolitiqueConfidentialitePage() {
               </p>
               <p>
                 Vous pouvez exercer ces droits par e-mail a{" "}
-                <a href="mailto:contact@hendricx-peinture.fr">
-                  contact@hendricx-peinture.fr
+                <a href="mailto:n.hendricx@laposte.net">
+                  n.hendricx@laposte.net
                 </a>
                 . Vous disposez egalement du droit d&apos;introduire une reclamation
                 aupres de la CNIL.

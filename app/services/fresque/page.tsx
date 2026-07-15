@@ -25,40 +25,60 @@ const frescoPrinciples = [
 
 const editorialProjects = [
   {
+    type: "Fresque japonaise",
+    title: "Masque japonais et portrait",
+    image: "/photos/fresque-japonaise-face.jpg",
+    alt: "Fresque japonaise rouge et noire avec masque et portrait",
+    className: "frescoFeatureLarge",
+  },
+  {
+    type: "Fresque japonaise",
+    title: "Perspective murale",
+    image: "/photos/fresque-japonaise-cote.jpg",
+    alt: "Fresque japonaise vue de cote dans une piece interieure",
+    className: "frescoFeatureTall",
+  },
+  {
     type: "Maison",
     title: "Route au coucher du soleil",
     image: "/photos/661744embeddedImage.jpg",
-    className: "frescoFeatureLarge",
+    alt: "Fresque murale avec route et coucher de soleil",
+    className: "frescoFeatureWide",
   },
   {
     type: "Restaurant",
     title: "Fresque en cours",
     image: "/photos/187393embeddedImage.jpg",
+    alt: "Fresque murale artistique en cours de realisation",
     className: "frescoFeatureTall",
   },
   {
     type: "Commerce",
     title: "Terrain de sport",
     image: "/photos/2962805embeddedImage.jpg",
+    alt: "Fresque murale decorative sur le theme du sport",
     className: "frescoFeatureHalf",
   },
   {
     type: "Salon",
     title: "Jeu et mouvement",
     image: "/photos/311261embeddedImage.jpg",
+    alt: "Fresque murale graphique avec mouvement et couleurs",
     className: "frescoFeatureHalf",
   },
   {
     type: "Chambre",
     title: "Caserne graphique",
     image: "/photos/830e704a-58d9-4ba1-bd83-2b2384fa5691.jpg",
-    className: "frescoFeatureWide",
+    alt: "Fresque graphique dans une chambre",
+    className: "frescoFeatureSmall",
   },
   {
     type: "Bureau",
     title: "Espace signé",
     image: "/photos/86282ef7-10f8-4a6c-8db6-5d4b9a92751c.jpg",
-    className: "frescoFeatureTall",
+    alt: "Fresque murale signee dans un espace interieur",
+    className: "frescoFeatureSmall",
   },
 ];
 
@@ -104,8 +124,8 @@ export default function FresquePage() {
         <section className={`${styles.section} ${styles.splitSection}`}>
           <div className={`${styles.imageMask} maskReveal`}>
             <img
-              src="/photos/07c0b64e-abfa-46c4-870d-aaf5af280acc.jpg"
-              alt="Artisan en train de peindre une fresque murale"
+              src="/photos/fresque-japonaise-cote.jpg"
+              alt="Fresque japonaise rouge et noire vue de cote"
             />
           </div>
           <div className={styles.serviceText}>
@@ -173,8 +193,8 @@ export default function FresquePage() {
               >
                 <img
                   src={project.image}
-                  alt={project.title}
-                  loading="lazy"
+                  alt={project.alt}
+                  loading={index < 2 ? "eager" : "lazy"}
                   decoding="async"
                 />
                 <figcaption>

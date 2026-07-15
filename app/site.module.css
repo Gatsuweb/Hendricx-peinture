@@ -1036,8 +1036,23 @@
 .frescoFeatureLarge,
 .frescoFeatureWide,
 .frescoFeatureTall,
-.frescoFeatureHalf {
+.frescoFeatureHalf,
+.frescoFeatureSmall {
   aspect-ratio: 4 / 5;
+}
+
+.frescoFeatureSmall figcaption {
+  gap: 5px;
+  padding: 16px;
+}
+
+.frescoFeatureSmall figcaption span {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+}
+
+.frescoFeatureSmall figcaption strong {
+  font-size: clamp(18px, 2vw, 24px);
 }
 
 .frescoTimeline {
@@ -1451,6 +1466,21 @@
   gap: 16px;
 }
 
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.formStatus {
+  color: var(--on-surface-variant);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
 .fieldGroup input,
 .fieldGroup textarea {
   width: 100%;
@@ -1458,6 +1488,15 @@
   background: var(--surface-container-lowest);
   padding: 16px;
   color: var(--on-surface);
+}
+
+.fieldGroup button {
+  cursor: pointer;
+}
+
+.fieldGroup button:disabled {
+  cursor: wait;
+  opacity: 0.72;
 }
 
 .fieldGroup input:focus,
@@ -1650,6 +1689,12 @@
   .frescoFeatureHalf {
     grid-column: span 6;
     min-height: 440px;
+    aspect-ratio: 6 / 4;
+  }
+
+  .frescoFeatureSmall {
+    grid-column: span 3;
+    min-height: 220px;
     aspect-ratio: 6 / 4;
   }
 

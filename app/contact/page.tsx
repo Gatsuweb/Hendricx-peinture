@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ButtonLink } from "@/components/ButtonLink";
+import { ContactForm } from "@/components/ContactForm";
 import { PageShell } from "@/components/PageShell";
 import { createMetadata } from "../seo";
 import styles from "../site.module.css";
@@ -45,31 +45,7 @@ export default function ContactPage() {
               <span className={styles.tag}>Centre Bretagne</span>
             </div>
           </div>
-          <form className={`${styles.fieldGroup} reveal delay200`}>
-            <input aria-label="Nom" name="name" placeholder="Nom" autoComplete="name" />
-            <input
-              aria-label="Email"
-              name="email"
-              placeholder="Email"
-              type="email"
-              autoComplete="email"
-            />
-            <input
-              aria-label="Telephone"
-              name="phone"
-              placeholder="Telephone"
-              type="tel"
-              autoComplete="tel"
-            />
-            <textarea
-              aria-label="Message"
-              name="message"
-              placeholder="Commune, type de travaux, surfaces, delais souhaites"
-            />
-            <ButtonLink href="mailto:contact@hendricx-peinture.fr?subject=Demande%20de%20devis%20peinture">
-              Envoyer la demande
-            </ButtonLink>
-          </form>
+          <ContactForm />
         </section>
       </main>
     </PageShell>

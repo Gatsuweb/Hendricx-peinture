@@ -21,7 +21,7 @@ export const metadata: Metadata = createMetadata({
 const images = {
   heroLeft: "/photos/476836935_2078489489256904_6370289537618551027_n.jpg",
   heroRight: "/photos/661744embeddedImage.jpg",
-  fresco: "/photos/2962805embeddedImage.jpg",
+  fresco: "/photos/fresque-japonaise-cote.jpg",
   renovation: "/photos/477796924_2078489629256890_7221419132280354026_n.jpg",
 };
 
@@ -152,7 +152,7 @@ export default function Home() {
             <div className={`${styles.imageMask} ${styles.imageLeft} maskReveal`}>
               <img
                 src={images.fresco}
-                alt="A close-up of an artist's hand painting a complex, colorful mural"
+                alt="Fresque japonaise rouge et noire peinte sur un mur interieur"
               />
             </div>
             <div className={`${styles.serviceText} ${styles.textRight}`}>

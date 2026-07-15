@@ -40,8 +40,8 @@ export default function ServicesPage() {
           <div className={styles.serviceGrid}>
             <div className={`${styles.imageMask} ${styles.imageLeft} maskReveal`}>
               <img
-                src="/photos/187393embeddedImage.jpg"
-                alt="Artisan réalisant une fresque murale"
+                src="/photos/fresque-japonaise-cote.jpg"
+                alt="Fresque japonaise rouge et noire peinte sur un mur interieur"
               />
             </div>
             <div className={`${styles.serviceText} ${styles.textRight}`}>

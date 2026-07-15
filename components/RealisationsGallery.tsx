@@ -26,10 +26,17 @@ type GalleryProject = FrescoProject | RenovationProject;
 const frescoProjects: FrescoProject[] = [
   {
     type: "fresque",
+    title: "Masque japonais et portrait",
+    text: "Fresque japonaise rouge et noire, peinte sur mesure pour un interieur.",
+    image: "/photos/fresque-japonaise-face.jpg",
+    className: "projectWide",
+  },
+  {
+    type: "fresque",
     title: "Route au coucher du soleil",
     text: "Fresque monumentale, couleurs vives et composition graphique.",
     image: "/photos/661744embeddedImage.jpg",
-    className: "projectWide",
+    className: "projectHalf",
   },
   {
     type: "fresque",
