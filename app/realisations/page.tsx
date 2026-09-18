@@ -21,7 +21,7 @@ export default function RealisationsPage() {
           <div className={styles.subHeroInner}>
             <span className={`${styles.eyebrow} reveal`}>Realisations</span>
             <h1 className={`${styles.subHeroTitle} reveal delay100`}>
-              Matieres, couleurs et gestes a l&apos;echelle de l&apos;espace
+              Matières, couleurs et gestes a l&apos;échelle de l&apos;espace
             </h1>
             <p className={`${styles.bodyLg} reveal delay200`}>
               Une selection de projets ou la precision technique rencontre
@@ -38,7 +38,7 @@ export default function RealisationsPage() {
             <p className={`${styles.bodyLg} reveal delay100`}>
               Chaque projet commence par une rencontre.
             </p>
-            <ButtonLink href="/contact">Nous Contacter</ButtonLink>
+            <ButtonLink href="/contact">Me contacter</ButtonLink>
           </div>
         </section>
       </main>

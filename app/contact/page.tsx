@@ -30,19 +30,35 @@ export default function ContactPage() {
         </section>
         <section className={`${styles.section} ${styles.contactGrid}`}>
           <div className={styles.serviceText}>
-            <span className={`${styles.eyebrow} reveal`}>Premier echange</span>
+            <span className={`${styles.eyebrow} reveal`}>Coordonnées</span>
             <h2 className={`${styles.headlineLg} reveal delay100`}>
-              Parlez-nous de votre espace
+              Me contacter
             </h2>
             <p className={`${styles.bodyMd} reveal delay200`}>
-              Indiquez le type de projet, la commune, les surfaces approximatives,
-              l&apos;etat des supports et le niveau de finition attendu.
+              Pour une demande de devis ou pour échanger autour de votre projet,
+              contactez-moi par e-mail ou retrouvez mes réalisations sur les réseaux sociaux.
             </p>
-            <div className={`${styles.tags} reveal delay300`}>
-              <span className={styles.tag}>Paule</span>
-              <span className={styles.tag}>Carhaix</span>
-              <span className={styles.tag}>Rostrenen</span>
-              <span className={styles.tag}>Centre Bretagne</span>
+            <div className={`${styles.contactDetails} reveal delay300`}>
+              <a href="mailto:n.hendricx@laposte.net">
+                <span>E-mail</span>
+                <strong>n.hendricx@laposte.net</strong>
+              </a>
+              <a
+                href="https://www.facebook.com/HendricxPeinture"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>Facebook</span>
+                <strong>Hendricx Peinture</strong>
+              </a>
+              <a
+                href="https://www.instagram.com/nhendricx/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>Instagram</span>
+                <strong>@nhendricx</strong>
+              </a>
             </div>
           </div>
           <ContactForm />

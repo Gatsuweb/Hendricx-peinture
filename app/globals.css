@@ -158,3 +158,23 @@ h1{
     --section-gap: var(--section-gap-mobile);
   }
 }
+
+/* Start the existing hero reveals after the opening signature lifts away. */
+body:has(#site-intro[data-active]) [data-hero] .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  .reveal,
+  .maskReveal,
+  body:has(#site-intro[data-active]) [data-hero] .reveal {
+    opacity: 1;
+    transform: none;
+    clip-path: none;
+    transition: none;
+  }
+}

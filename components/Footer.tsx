@@ -16,7 +16,7 @@ export function Footer() {
           <h4>Services</h4>
           <ul>
             <li>
-              <Link href="/services/renovation">Rénovation intérieure</Link>
+              <Link href="/services/renovation">Rénovation intérieure et extérieure</Link>
             </li>
             <li>
               <Link href="/services/fresque">Fresque murale</Link>
@@ -34,6 +34,9 @@ export function Footer() {
             </li>
             <li>
               <span>Rostrenen</span>
+            </li>
+            <li>
+              <span>Gourin</span>
             </li>
             <li>
               <Link href="/contact">Devis peinture</Link>

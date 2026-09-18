@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
+import { SiteIntro } from "@/components/SiteIntro";
 import { baseLocalBusinessSchema, siteUrl } from "./seo";
 import "./globals.css";
 
@@ -75,6 +76,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <SiteIntro />
         <JsonLd data={baseLocalBusinessSchema} />
         {children}
       </body>

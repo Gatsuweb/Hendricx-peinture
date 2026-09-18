@@ -50,7 +50,7 @@ export default function ServicesPage() {
                 Fresques artistiques
               </h2>
               <p className={`${styles.bodyMd} reveal delay200`}>
-                Des créations uniques pour donner vie à vos murs. Nous réalisons des
+                Des créations uniques pour donner vie à vos murs. Je réalise des
                 fresques sur mesure qui transforment un mur vide en une œuvre
                 originale.
               </p>
@@ -63,20 +63,20 @@ export default function ServicesPage() {
             <div className={`${styles.serviceText} ${styles.textLeft}`}>
               <span className={`${styles.eyebrow} reveal`}>02 - Précision</span>
               <h2 className={`${styles.headlineLg} reveal delay100`}>
-                Rénovation d&apos;intérieur
+                Rénovation d&apos;exterieur
               </h2>
               <p className={`${styles.bodyMd} reveal delay200`}>
-                Des finitions soignées pour sublimer vos espaces. Nous réalisons des
+                Des finitions soignées pour sublimer vos espaces. Je réalise des
                 travaux de peinture et de finition avec des matériaux de qualité.
               </p>
               <ButtonLink href="/services/renovation" tone="line">
-                Découvrir nos standards
+                Découvrir mes standards
               </ButtonLink>
             </div>
             <div className={`${styles.imageMask} ${styles.imageRight} maskReveal`}>
               <img
-                src="/photos/480680043_2084649251974261_4842625914116337843_n.jpg"
-                alt="Pièce de vie rénovée avec finition soignée"
+                src="/photos/renovation-facade-avant-apres.jpg"
+                alt="Façade de maison présentée avant et après rénovation extérieure"
               />
             </div>
           </div>

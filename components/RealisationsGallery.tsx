@@ -28,8 +28,22 @@ const frescoProjects: FrescoProject[] = [
     type: "fresque",
     title: "Masque japonais et portrait",
     text: "Fresque japonaise rouge et noire, peinte sur mesure pour un interieur.",
-    image: "/photos/fresque-japonaise-face.jpg",
+    image: "/photos/fresque-japonaise-cote.jpg",
     className: "projectWide",
+  },
+    {
+    type: "fresque",
+    title: "Terrain de sport",
+    text: "Création graphique adaptée aux volumes et à l'usage du lieu.",
+    image: "/photos/fresque-foot.jpg",
+    className: "projectTall",
+  },
+  {
+    type: "fresque",
+    title: "Le dieu Arès",
+    text: "Fresque mythologique rouge, noire et blanche réalisée sur mesure.",
+    image: "/photos/fresque-ares.jpg",
+    className: "projectHalf",
   },
   {
     type: "fresque",
@@ -43,7 +57,7 @@ const frescoProjects: FrescoProject[] = [
     title: "Fresque en cours",
     text: "Murale peinte sur place, du dessin à la mise en couleur.",
     image: "/photos/187393embeddedImage.jpg",
-    className: "projectTall",
+    className: "projectHalf",
   },
   {
     type: "fresque",
@@ -52,15 +66,29 @@ const frescoProjects: FrescoProject[] = [
     image: "/photos/2962805embeddedImage.jpg",
     className: "projectHalf",
   },
+  {
+    type: "fresque",
+    title: "Ecole plévin",
+    text: "Création graphique adaptée aux volumes et à l'usage du lieu.",
+    image: "/photos/fresque-plevin.jpg",
+    className: "projectHalf",
+  },
 ];
 
 const renovationProjects: RenovationProject[] = [
   {
     type: "renovation",
-    title: "Façade avant / après",
-    text: "Lecture directe de l'état initial et du résultat fini sur une même image.",
-    image: "/photos/468298020_2022966138142573_7311619731374257905_n.jpg",
+    title: "Façade de maison avant / après",
+    text: "Rénovation complète d'une façade de maison présentée avant et après les travaux.",
+    image: "/photos/renovation-facade-avant-apres.jpg",
     className: "projectTall",
+  },
+  {
+    type: "renovation",
+    title: "interieur de maison avant / après",
+    text: "Rénovation d'une façade de séjour présentée avant et après les travaux.",
+    image: "/photos/peinture-rouge.jpg",
+    className: "projectHalf",
   },
   {
     type: "renovation",
@@ -75,6 +103,20 @@ const renovationProjects: RenovationProject[] = [
     text: "Chantier intérieur documenté en montage avant / après.",
     image: "/photos/6974435embeddedImage.jpg",
     className: "projectWide",
+  },
+  {
+    type: "renovation",
+    title: "Ravalement de pignon avant / après",
+    text: "Nettoyage et remise en peinture d'un pignon extérieur.",
+    image: "/photos/ravalement-pignon-avant-apres.jpg",
+    className: "projectWide",
+  },
+  {
+    type: "renovation",
+    title: "Rénovation d'escalier",
+    text: "Escalier rénové avec structure noire et marches en bois naturel.",
+    image: "/photos/renovation-escalier.jpg",
+    className: "projectTall",
   },
 ];
 
@@ -158,10 +200,7 @@ export function RealisationsGallery() {
                 onClick={() => setSelectedProject(project)}
               >
                 <img src={project.image} alt={project.title} />
-                <span className={styles.projectOverlay}>
-                  <strong>{project.title}</strong>
-                  <span>{project.text}</span>
-                </span>
+
               </button>
             ))}
           </div>
@@ -175,12 +214,9 @@ export function RealisationsGallery() {
             <h2 className={`${styles.headlineLg} reveal delay100`}>
               Avant / après propres, lisibles et professionnels
             </h2>
-            <p className={`${styles.bodyMd} reveal delay200`}>
-              Une lecture directe du chantier : état initial, préparation des supports,
-              puis finition soignée sans surcharge de texte.
-            </p>
+
           </div>
-          <div className={styles.galleryGrid}>
+          <div className={`${styles.galleryGrid} ${styles.renovationGalleryGrid}`}>
             {renovationProjects.map((project) => (
               <button
                 key={project.title}
@@ -190,10 +226,7 @@ export function RealisationsGallery() {
                 aria-label={`Ouvrir ${project.title}`}
               >
                 <img src={project.image} alt={project.title} />
-                <span className={styles.projectOverlay}>
-                  <strong>{project.title}</strong>
-                  <span>{project.text}</span>
-                </span>
+
               </button>
             ))}
           </div>
@@ -222,10 +255,7 @@ export function RealisationsGallery() {
               x
             </button>
             <img src={selectedProject.image} alt={selectedProject.title} />
-            <div className={styles.projectModalCaption}>
-              <h3>{selectedProject.title}</h3>
-              <p>{selectedProject.text}</p>
-            </div>
+
           </div>
         </div>
       ) : null}

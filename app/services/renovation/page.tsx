@@ -27,7 +27,7 @@ const processSteps = [
   {
     title: "État des lieux",
     description:
-      "Nous évaluons les supports, les reprises nécessaires et le niveau de finition attendu avant de chiffrer.",
+      "J'évalue les supports, les reprises nécessaires et le niveau de finition attendu avant de chiffrer.",
   },
   {
     title: "Préparation",
@@ -71,12 +71,12 @@ export default function RenovationPage() {
 
         <section className={`${styles.section} ${styles.renovationHeroGrid}`}>
           <div className={styles.sectionIntro}>
-            <span className={`${styles.eyebrow} reveal`}>Notre engagement</span>
+            <span className={`${styles.eyebrow} reveal`}>Mon engagement</span>
             <h2 className={`${styles.headlineMd} reveal delay100`}>
               Des rénovations simples, propres et durables.
             </h2>
             <p className={`${styles.bodyMd} reveal delay200`}>
-              Nous commençons par analyser l&apos;état des surfaces, puis nous
+              Je commence par analyser l&apos;état des surfaces, puis je
               préparons soigneusement les supports pour garantir un résultat propre et
               adapté à votre quotidien.
             </p>
@@ -134,7 +134,7 @@ export default function RenovationPage() {
 
         <section className={`${styles.section} ${styles.proofSection}`}>
           <div className={styles.sectionIntro}>
-            <span className={`${styles.eyebrow} reveal`}>Ce que nous traitons</span>
+            <span className={`${styles.eyebrow} reveal`}>Les surfaces que je traite</span>
             <h2 className={`${styles.headlineMd} reveal delay100`}>
               Une intervention adaptée à l&apos;état du chantier.
             </h2>
@@ -208,7 +208,7 @@ export default function RenovationPage() {
               Rénovation de maisons et longères en Centre Bretagne
             </h2>
             <p className={styles.renovationNote}>
-              Nous intervenons autour de Carhaix, Rostrenen et Paule pour des projets
+              J&apos;interviens autour de Carhaix, Rostrenen et Paule pour des projets
               de remise en état, de rafraîchissement ou de rénovation complète des
               surfaces intérieures.
             </p>
@@ -220,7 +220,7 @@ export default function RenovationPage() {
             <h2 className={styles.headlineLg}>Parlons de votre chantier</h2>
             <p className={styles.bodyLg}>
               Si vous cherchez une rénovation intérieure sérieuse, propre et lisible,
-              nous pouvons étudier votre projet et définir le bon niveau de finition.
+              je peux étudier votre projet et définir le bon niveau de finition.
             </p>
             <ButtonLink href="/contact">Demander un devis</ButtonLink>
           </div>

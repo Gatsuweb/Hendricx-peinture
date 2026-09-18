@@ -24,18 +24,26 @@ const frescoPrinciples = [
 ];
 
 const editorialProjects = [
+
   {
-    type: "Fresque japonaise",
-    title: "Masque japonais et portrait",
-    image: "/photos/fresque-japonaise-face.jpg",
-    alt: "Fresque japonaise rouge et noire avec masque et portrait",
-    className: "frescoFeatureLarge",
+    type: "Fresque mythologique",
+    title: "Le dieu Arès",
+    image: "/photos/fresque-ares.jpg",
+    alt: "Fresque murale rouge, noire et blanche représentant le dieu Arès",
+    className: "frescoFeatureTall",
   },
   {
     type: "Fresque japonaise",
     title: "Perspective murale",
     image: "/photos/fresque-japonaise-cote.jpg",
     alt: "Fresque japonaise vue de cote dans une piece interieure",
+    className: "frescoFeatureLarge",
+  },
+  {
+    type: "Chambre",
+    title: "Caserne graphique",
+    image: "/photos/fresque-foot.jpg",
+    alt: "Fresque graphique dans une chambre",
     className: "frescoFeatureTall",
   },
   {
@@ -73,13 +81,7 @@ const editorialProjects = [
     alt: "Fresque graphique dans une chambre",
     className: "frescoFeatureSmall",
   },
-  {
-    type: "Bureau",
-    title: "Espace signé",
-    image: "/photos/86282ef7-10f8-4a6c-8db6-5d4b9a92751c.jpg",
-    alt: "Fresque murale signee dans un espace interieur",
-    className: "frescoFeatureSmall",
-  },
+
 ];
 
 const processSteps = [
@@ -125,7 +127,7 @@ export default function FresquePage() {
           <div className={`${styles.imageMask} maskReveal`}>
             <img
               src="/photos/fresque-japonaise-cote.jpg"
-              alt="Fresque japonaise rouge et noire vue de cote"
+              alt="Fresque japonaise rouge et noire vue de face"
             />
           </div>
           <div className={styles.serviceText}>
@@ -197,10 +199,7 @@ export default function FresquePage() {
                   loading={index < 2 ? "eager" : "lazy"}
                   decoding="async"
                 />
-                <figcaption>
-                  <span>{project.type}</span>
-                  <strong>{project.title}</strong>
-                </figcaption>
+
               </figure>
             ))}
           </div>

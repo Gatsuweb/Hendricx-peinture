@@ -504,11 +504,6 @@
   background: rgb(255 255 255 / 4%);
 }
 
-.testimonialCard > span {
-  color: var(--secondary);
-  font-size: 40px;
-}
-
 .testimonialCard p {
   margin: 32px 0;
   color: rgb(255 255 255 / 84%);
@@ -759,11 +754,6 @@
   background: rgb(255 255 255 / 4%);
 }
 
-.localReviewCard > span {
-  color: var(--secondary);
-  font-size: 38px;
-}
-
 .localReviewCard p {
   margin: 28px 0;
   color: rgb(255 255 255 / 84%);
@@ -980,20 +970,27 @@
 }
 
 .frescoEditorialGrid {
-  display: grid;
-  gap: var(--gutter);
+  column-count: 1;
+  column-gap: var(--gutter);
 }
 
 .frescoEditorialItem {
   position: relative;
-  min-height: 360px;
+  display: inline-block;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: 0 0 var(--gutter);
   overflow: hidden;
+  break-inside: avoid;
+  vertical-align: top;
   background: var(--surface-container);
 }
 
 .frescoEditorialItem img {
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   transition: transform 900ms cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -1038,7 +1035,7 @@
 .frescoFeatureTall,
 .frescoFeatureHalf,
 .frescoFeatureSmall {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: auto;
 }
 
 .frescoFeatureSmall figcaption {
@@ -1171,6 +1168,26 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--gutter);
+}
+
+.renovationGalleryGrid {
+  display: block;
+  column-count: 1;
+  column-gap: var(--gutter);
+}
+
+.renovationGalleryGrid .projectCard {
+  display: inline-block;
+  min-height: 0;
+  margin: 0 0 var(--gutter);
+  break-inside: avoid;
+  vertical-align: top;
+}
+
+.renovationGalleryGrid .projectCard img {
+  display: block;
+  height: auto;
+  min-height: 0;
 }
 
 .galleryFilterSection {
@@ -1418,6 +1435,50 @@
   gap: 32px;
 }
 
+.contactDetails {
+  display: grid;
+  gap: 12px;
+}
+
+.contactDetails a {
+  display: grid;
+  gap: 5px;
+  border: 1px solid rgb(0 139 139 / 24%);
+  padding: 16px 18px;
+  color: var(--primary);
+  text-decoration: none;
+  transition:
+    border-color 220ms ease,
+    background 220ms ease,
+    transform 220ms ease;
+}
+
+.contactDetails a:hover,
+.contactDetails a:focus-visible {
+  border-color: var(--primary);
+  background: rgb(0 139 139 / 7%);
+  transform: translateY(-2px);
+}
+
+.contactDetails a:focus-visible {
+  outline: 2px solid rgb(0 139 139 / 18%);
+  outline-offset: 2px;
+}
+
+.contactDetails span {
+  color: var(--secondary);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contactDetails strong {
+  overflow-wrap: anywhere;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .legalSection {
   padding-top: 0;
 }
@@ -1660,8 +1721,7 @@
   }
 
   .frescoEditorialGrid {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    align-items: stretch;
+    column-count: 2;
   }
 
   .frescoEditorialItem figcaption {
@@ -1702,6 +1762,15 @@
     grid-column: span 7;
     min-height: 460px;
     aspect-ratio: 7 / 4;
+  }
+
+  .frescoFeatureLarge,
+  .frescoFeatureWide,
+  .frescoFeatureTall,
+  .frescoFeatureHalf,
+  .frescoFeatureSmall {
+    min-height: 0;
+    aspect-ratio: auto;
   }
 
   .frescoTimeline {
@@ -1745,6 +1814,10 @@
 
   .galleryGrid {
     grid-template-columns: repeat(12, 1fr);
+  }
+
+  .renovationGalleryGrid {
+    column-count: 2;
   }
 
   .projectModalBeforeAfter {

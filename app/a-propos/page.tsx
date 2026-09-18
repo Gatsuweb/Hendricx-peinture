@@ -9,7 +9,7 @@ const values = [
     icon: "draw",
     title: "Artisanat",
     description:
-      "Chaque projet est réalisé à la main avec soin, adapté à votre espace.",
+      "Chacun des travaux est réalisé à la main avec soin et adapté à votre espace.",
   },
   {
     icon: "architecture",
@@ -71,7 +71,7 @@ export default function AboutPage() {
               Donner vie aux murs
             </h2>
             <p className={`${styles.bodyMd} reveal delay200`}>
-              Je m&apos;appelle Nicolas, originaire de Brest. Après quelques années en
+              Je m&apos;appelle Nicolas, je suis originaire de Brest. Après quelques années en
               ville, j&apos;ai fait le choix de m&apos;installer à la campagne et de me lancer
               à mon compte. Fort de 12 années d&apos;expérience dans le domaine de la
               peinture et des métiers qui l&apos;entourent, j&apos;ai développé un savoir-faire
@@ -105,7 +105,7 @@ export default function AboutPage() {
         </section>
         <section className={`${styles.section} ${styles.valuesSection}`}>
           <div className={styles.sectionIntro}>
-            <span className={`${styles.eyebrow} reveal`}>Nos valeurs</span>
+            {/* <span className={`${styles.eyebrow} reveal`}>Mes valeurs</span> */}
             <h2 className={`${styles.headlineLg} reveal delay100`}>
               Une peinture pensée pour durer
             </h2>

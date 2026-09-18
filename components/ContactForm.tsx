@@ -65,7 +65,7 @@ export function ContactForm() {
       <textarea
         aria-label="Message"
         name="message"
-        placeholder="Commune, type de travaux, surfaces, delais souhaites"
+        placeholder="Décrivez votre demande"
         required
       />
       <button

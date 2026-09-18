@@ -119,7 +119,7 @@ Je propose un travail artisanal, soigné et précis. Chaque chantier commence pa
 
 Artisanat
 
-Chaque projet est réalisé à la main avec soin, adapté à votre espace.
+Chacun des travaux est réalisé à la main avec soin et adapté à votre espace.
 
 Précision
 

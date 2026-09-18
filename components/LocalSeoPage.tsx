@@ -155,7 +155,7 @@ function PageContent({
                   }`}
                   key={review.quote}
                 >
-                  <span className="material-symbols-outlined">format_quote</span>
+
                   <p>{review.quote}</p>
                   <footer>
                     <strong>{review.author}</strong>

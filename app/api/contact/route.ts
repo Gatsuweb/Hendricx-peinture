@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const contactEmail = process.env.CONTACT_TO_EMAIL ?? "n.hendricx@laposte.net";
+const contactEmail = "n.hendricx@laposte.net";
 const resendApiKey = process.env.RESEND_API_KEY;
 const fromEmail = process.env.CONTACT_FROM_EMAIL;
 
