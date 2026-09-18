@@ -28,7 +28,7 @@ const frescoProjects: FrescoProject[] = [
     type: "fresque",
     title: "Masque japonais et portrait",
     text: "Fresque japonaise rouge et noire, peinte sur mesure pour un interieur.",
-    image: "/photos/fresque-japonaise-cote.jpg",
+    image: "/photos/fresque-japonaise.jpg",
     className: "projectWide",
   },
     {

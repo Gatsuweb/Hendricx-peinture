@@ -185,6 +185,14 @@
   transition: opacity 700ms ease;
   background: rgba(255, 255, 255, 0.75);
 }
+
+.heroPanelVivid .shade {
+  background: rgba(255, 255, 255, 0.52);
+}
+
+.heroPanelVivid:hover .shade {
+  opacity: 0.42;
+}
 .heroIntro p{
   color: black;
 }

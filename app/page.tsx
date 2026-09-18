@@ -21,7 +21,7 @@ export const metadata: Metadata = createMetadata({
 const images = {
   heroLeft: "/photos/hero-renovation-interieure-avant-apres.jpg",
   heroRight: "/photos/fresque-ares.jpg",
-  fresco: "/photos/fresque-japonaise-face.jpg",
+  fresco: "/photos/fresque-japonaise.jpg",
   renovation: "/photos/477796924_2078489629256890_7221419132280354026_n.jpg",
 };
 
@@ -108,9 +108,9 @@ export default function Home() {
               </ButtonLink>
             </div>
           </div>
-          <div className={styles.heroPanel}>
+          <div className={`${styles.heroPanel} ${styles.heroPanelVivid}`}>
             <img
-              className={`${styles.heroImage} ${styles.grayImage}`}
+              className={styles.heroImage}
               src={images.heroLeft}
               alt="Rénovation intérieure présentée avant et après les travaux"
               data-parallax-speed="0.2"

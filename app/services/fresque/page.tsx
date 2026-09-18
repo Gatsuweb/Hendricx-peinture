@@ -35,7 +35,7 @@ const editorialProjects = [
   {
     type: "Fresque japonaise",
     title: "Perspective murale",
-    image: "/photos/fresque-japonaise-cote.jpg",
+    image: "/photos/fresque-japonaise.jpg",
     alt: "Fresque japonaise vue de cote dans une piece interieure",
     className: "frescoFeatureLarge",
   },
@@ -126,7 +126,7 @@ export default function FresquePage() {
         <section className={`${styles.section} ${styles.splitSection}`}>
           <div className={`${styles.imageMask} maskReveal`}>
             <img
-              src="/photos/fresque-japonaise-cote.jpg"
+              src="/photos/fresque-japonaise.jpg"
               alt="Fresque japonaise rouge et noire vue de face"
             />
           </div>
