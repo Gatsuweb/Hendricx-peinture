@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const siteUrl = "https://www.hendricx-peinture.fr";
+export const siteUrl = "https://www.hendricx-peinture.com";
 
 export const serviceArea = [
   "Paule",

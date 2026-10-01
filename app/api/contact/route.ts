@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
+import { CONTACT_EMAIL } from "@/lib/contact";
+import type { ContactResponse } from "@/lib/contact-response";
 
-const contactEmail = "n.hendricx@laposte.net";
+const contactEmail = process.env.CONTACT_TO_EMAIL || CONTACT_EMAIL;
 const resendApiKey = process.env.RESEND_API_KEY;
 const fromEmail = process.env.CONTACT_FROM_EMAIL;
 
@@ -26,23 +28,26 @@ function escapeHtml(value: string) {
 }
 
 export async function POST(request: Request) {
-  if (!resendApiKey || !fromEmail) {
-    return NextResponse.json(
-      { message: "Email service is not configured." },
-      { status: 500 },
-    );
-  }
-
   let payload: ContactPayload;
 
   try {
     payload = await request.json();
   } catch {
-    return NextResponse.json({ message: "Invalid request." }, { status: 400 });
+    return NextResponse.json<ContactResponse>(
+      { status: "error", reason: "validation" },
+      { status: 400 },
+    );
+  }
+
+  if (!payload || typeof payload !== "object") {
+    return NextResponse.json<ContactResponse>(
+      { status: "error", reason: "validation" },
+      { status: 400 },
+    );
   }
 
   if (clean(payload.website)) {
-    return NextResponse.json({ ok: true });
+    return NextResponse.json<ContactResponse>({ status: "blocked" });
   }
 
   const name = clean(payload.name);
@@ -51,9 +56,16 @@ export async function POST(request: Request) {
   const message = clean(payload.message);
 
   if (!name || !email || !message) {
-    return NextResponse.json(
-      { message: "Name, email and message are required." },
+    return NextResponse.json<ContactResponse>(
+      { status: "error", reason: "validation" },
       { status: 400 },
+    );
+  }
+
+  if (!resendApiKey || !fromEmail) {
+    return NextResponse.json<ContactResponse>(
+      { status: "error", reason: "technical" },
+      { status: 500 },
     );
   }
 
@@ -77,28 +89,35 @@ export async function POST(request: Request) {
     </div>
   `;
 
-  const response = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${resendApiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      from: fromEmail,
-      to: [contactEmail],
-      reply_to: email,
-      subject,
-      text,
-      html,
-    }),
-  });
+  try {
+    const response = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${resendApiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from: fromEmail,
+        to: [contactEmail],
+        reply_to: email,
+        subject,
+        text,
+        html,
+      }),
+    });
 
-  if (!response.ok) {
-    return NextResponse.json(
-      { message: "Email could not be sent." },
+    if (!response.ok) {
+      return NextResponse.json<ContactResponse>(
+        { status: "error", reason: "technical" },
+        { status: 502 },
+      );
+    }
+  } catch {
+    return NextResponse.json<ContactResponse>(
+      { status: "error", reason: "technical" },
       { status: 502 },
     );
   }
 
-  return NextResponse.json({ ok: true });
+  return NextResponse.json<ContactResponse>({ status: "accepted" });
 }

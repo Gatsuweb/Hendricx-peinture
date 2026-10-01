@@ -1,10 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { CONTACT_EMAIL } from "@/lib/contact";
+import type { ContactResponse } from "@/lib/contact-response";
+import { trackAcceptedLead } from "@/lib/tracking";
 import buttonStyles from "./ButtonLink.module.css";
 import styles from "@/app/site.module.css";
 
-type SubmitState = "idle" | "sending" | "success" | "error";
+type SubmitState = "idle" | "sending" | "success" | "blocked" | "error";
 
 export function ContactForm() {
   const [state, setState] = useState<SubmitState>("idle");
@@ -16,25 +19,31 @@ export function ContactForm() {
     const form = event.currentTarget;
     const formData = new FormData(form);
 
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: formData.get("name"),
-        email: formData.get("email"),
-        phone: formData.get("phone"),
-        message: formData.get("message"),
-        website: formData.get("website"),
-      }),
-    });
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.get("name"),
+          email: formData.get("email"),
+          phone: formData.get("phone"),
+          message: formData.get("message"),
+          website: formData.get("website"),
+        }),
+      });
+      const result: ContactResponse = await response.json();
 
-    if (response.ok) {
-      form.reset();
-      setState("success");
-      return;
+      if (response.ok && result.status === "accepted") {
+        form.reset();
+        setState("success");
+        trackAcceptedLead();
+        return;
+      }
+
+      setState(result.status === "blocked" ? "blocked" : "error");
+    } catch {
+      setState("error");
     }
-
-    setState("error");
   }
 
   return (
@@ -80,11 +89,14 @@ export function ContactForm() {
         </span>
       </button>
       {state === "success" ? (
-        <p className={styles.formStatus}>Votre demande a bien ete envoyee.</p>
+        <p className={styles.formStatus} role="status">Votre demande a bien été envoyée.</p>
+      ) : null}
+      {state === "blocked" ? (
+        <p className={styles.formStatus} role="status">Cette demande n&apos;a pas été envoyée.</p>
       ) : null}
       {state === "error" ? (
-        <p className={styles.formStatus}>
-          L&apos;envoi a echoue. Vous pouvez ecrire a n.hendricx@laposte.net.
+        <p className={styles.formStatus} role="status">
+          L&apos;envoi a échoué. Vous pouvez écrire à {CONTACT_EMAIL}.
         </p>
       ) : null}
     </form>

@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import Script from "next/script";
+import { ConsentManager } from "@/components/ConsentManager";
+import { DENIED_CONSENT } from "@/lib/consent";
 import { JsonLd } from "@/components/JsonLd";
 import { SiteIntro } from "@/components/SiteIntro";
 import { baseLocalBusinessSchema, siteUrl } from "./seo";
@@ -76,9 +79,17 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <Script
+          id="hendricx-consent-default"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};window.gtag("consent","default",${JSON.stringify(DENIED_CONSENT)});`,
+          }}
+        />
         <SiteIntro />
         <JsonLd data={baseLocalBusinessSchema} />
         {children}
+        <ConsentManager />
       </body>
     </html>
   );

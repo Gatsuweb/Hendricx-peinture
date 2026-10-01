@@ -1,3 +1,4 @@
+import { CONTACT_EMAIL } from "@/lib/contact";
 import type { Metadata } from "next";
 import { PageShell } from "@/components/PageShell";
 import { createMetadata } from "../seo";
@@ -38,8 +39,8 @@ export default function PolitiqueConfidentialitePage() {
               </p>
               <p>
                 Contact donnees personnelles :{" "}
-                <a href="mailto:n.hendricx@laposte.net">
-                  n.hendricx@laposte.net
+                <a href={`mailto:${CONTACT_EMAIL}`}>
+                  {CONTACT_EMAIL}
                 </a>
               </p>
             </article>
@@ -98,8 +99,8 @@ export default function PolitiqueConfidentialitePage() {
               </p>
               <p>
                 Vous pouvez exercer ces droits par e-mail a{" "}
-                <a href="mailto:n.hendricx@laposte.net">
-                  n.hendricx@laposte.net
+                <a href={`mailto:${CONTACT_EMAIL}`}>
+                  {CONTACT_EMAIL}
                 </a>
                 . Vous disposez egalement du droit d&apos;introduire une reclamation
                 aupres de la CNIL.
@@ -109,11 +110,11 @@ export default function PolitiqueConfidentialitePage() {
             <article className={styles.legalBlock}>
               <h2>Cookies et traceurs</h2>
               <p>
-                Le site ne doit deposer des cookies ou traceurs soumis au
-                consentement qu&apos;apres accord explicite de l&apos;utilisateur. Si un
-                outil de mesure d&apos;audience, de publicite, de video embarquee ou
-                de suivi tiers est ajoute, un bandeau de consentement et un
-                mecanisme de retrait devront etre mis en place.
+                Les outils de mesure d&apos;audience et de publicité sont désactivés
+                avant votre choix. La bannière permet d&apos;accepter, de refuser ou
+                de personnaliser les finalités. Le bouton « Gérer les cookies »
+                permet de modifier ce choix à tout moment. Les outils Google ne
+                sont chargés qu&apos;après un accord pour au moins une finalité.
               </p>
             </article>
           </div>

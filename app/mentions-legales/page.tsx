@@ -1,3 +1,4 @@
+import { CONTACT_EMAIL } from "@/lib/contact";
 import type { Metadata } from "next";
 import { PageShell } from "@/components/PageShell";
 import { createMetadata } from "../seo";
@@ -56,8 +57,8 @@ export default function MentionsLegalesPage() {
               </p>
               <p>
                 Contact :{" "}
-                <a href="mailto:n.hendricx@laposte.net">
-                  n.hendricx@laposte.net
+                <a href={`mailto:${CONTACT_EMAIL}`}>
+                  {CONTACT_EMAIL}
                 </a>
               </p>
             </article>

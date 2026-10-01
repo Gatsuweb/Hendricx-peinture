@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
+import { EmailLink } from "@/components/EmailLink";
+import { CONTACT_EMAIL } from "@/lib/contact";
 import { PageShell } from "@/components/PageShell";
 import { createMetadata } from "../seo";
 import styles from "../site.module.css";
@@ -39,10 +41,10 @@ export default function ContactPage() {
               contactez-moi par e-mail ou retrouvez mes réalisations sur les réseaux sociaux.
             </p>
             <div className={`${styles.contactDetails} reveal delay300`}>
-              <a href="mailto:n.hendricx@laposte.net">
+              <EmailLink>
                 <span>E-mail</span>
-                <strong>n.hendricx@laposte.net</strong>
-              </a>
+                <strong>{CONTACT_EMAIL}</strong>
+              </EmailLink>
               <a
                 href="https://www.facebook.com/HendricxPeinture"
                 target="_blank"
