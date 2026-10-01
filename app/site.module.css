@@ -1952,3 +1952,190 @@
     opacity: 0.65;
   }
 }
+
+/* Local SEO reading and conversion flow */
+.localHero {
+  background:
+    radial-gradient(circle at 85% 18%, rgb(0 139 139 / 12%), transparent 34%),
+    linear-gradient(180deg, var(--surface-container-low), var(--surface));
+}
+
+.localHero .subHeroInner {
+  max-width: 1180px;
+}
+
+.localHero .bodyLg {
+  max-width: 760px;
+}
+
+.localHeroActions,
+.localFinalCtaActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.localQuickNav {
+  position: sticky;
+  z-index: 20;
+  top: 79px;
+  border-block: 1px solid rgb(0 0 0 / 8%);
+  background: rgb(255 253 249 / 94%);
+  backdrop-filter: blur(12px);
+}
+
+.localQuickNavInner {
+  display: flex;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 var(--margin-mobile);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.localQuickNavInner::-webkit-scrollbar {
+  display: none;
+}
+
+.localQuickNav a {
+  flex: none;
+  padding: 16px 18px;
+  color: var(--on-surface-variant);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.localQuickNav a:hover,
+.localQuickNav a:focus-visible {
+  color: var(--primary);
+  background: rgb(0 139 139 / 7%);
+}
+
+.localSeoSectionAlt {
+  background: var(--surface-container-low);
+}
+
+.localInlineCta {
+  display: grid;
+  gap: 8px;
+  max-width: 760px;
+  margin-top: 10px;
+  border-left: 3px solid var(--secondary);
+  padding: 22px 24px;
+  background: rgb(211 84 0 / 7%);
+}
+
+.localInlineCta strong {
+  color: var(--on-surface);
+  font-size: 18px;
+}
+
+.localInlineCta span {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.localCommitmentGrid {
+  display: grid;
+  gap: var(--gutter);
+}
+
+.localCommitmentCard {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-height: 220px;
+  border: 1px solid rgb(255 255 255 / 18%);
+  padding: 28px;
+  background: rgb(255 255 255 / 4%);
+}
+
+.localCommitmentCard > span {
+  color: var(--tertiary-container);
+  font-size: 30px;
+}
+
+.localCommitmentCard h3 {
+  color: white;
+  font-size: 21px;
+}
+
+.localCommitmentCard p {
+  color: rgb(255 255 255 / 72%);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.localFinalCta {
+  display: grid;
+  gap: 32px;
+  margin: 0;
+  padding: var(--section-gap) var(--margin-mobile);
+  background:
+    linear-gradient(135deg, rgb(0 139 139 / 12%), rgb(211 84 0 / 10%)),
+    var(--surface-container-low);
+}
+
+.localFinalCta > div:first-child {
+  display: grid;
+  max-width: 760px;
+  gap: 14px;
+}
+
+.localFinalCta h2 {
+  color: var(--primary);
+  font-family: var(--font-display);
+  font-size: clamp(34px, 6vw, 64px);
+  font-weight: 500;
+  line-height: 1.02;
+}
+
+.localFinalCta p {
+  color: var(--on-surface-variant);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+@media (min-width: 768px) {
+  .localHeroActions {
+    gap: 16px;
+  }
+
+  .localQuickNavInner,
+  .localFinalCta {
+    padding-right: var(--margin-desktop);
+    padding-left: var(--margin-desktop);
+  }
+
+  .localQuickNav a:first-child {
+    padding-left: 0;
+  }
+
+  .localCommitmentGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .localFinalCta {
+    grid-template-columns: minmax(0, 7fr) minmax(280px, 5fr);
+    align-items: end;
+  }
+
+  .localFinalCtaActions {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 767px) {
+  .localHeroActions > *,
+  .localFinalCtaActions > * {
+    width: 100%;
+  }
+
+  .localQuickNav {
+    top: 69px;
+  }
+}

@@ -1,4 +1,4 @@
-﻿import { scheduledLocalSlugs } from "./seo";
+import { scheduledLocalSlugs } from "./seo";
 
 export type LocalPageData = {
   slug: string;
@@ -23,9 +23,9 @@ export const localPages: Record<string, LocalPageData> = {
   "peintre-carhaix-plouguer": {
     slug: "peintre-carhaix-plouguer",
     city: "Carhaix-Plouguer",
-    title: "Peintre a Carhaix-Plouguer",
+    title: "Peintre à Carhaix-Plouguer",
     description:
-      "Hendricx Peinture intervient a Carhaix-Plouguer pour peinture interieure, exterieure, renovation de maisons bretonnes et fresques murales sur mesure.",
+      "Artisan peintre à Carhaix-Plouguer pour vos peintures intérieures, rénovations, façades, boiseries et fresques murales. Devis sur visite.",
     keywords: [
       "peintre carhaix",
       "peintre carhaix-plouguer",
@@ -35,213 +35,174 @@ export const localPages: Record<string, LocalPageData> = {
       "peintre exterieur carhaix",
     ],
     intro:
-      "Hendricx Peinture accompagne les particuliers, commerces et lieux professionnels de Carhaix-Plouguer pour des travaux de peinture soignes, de la renovation interieure aux fresques murales artistiques.",
+      "Depuis Paule, Hendricx Peinture intervient à Carhaix-Plouguer pour rénover un intérieur, protéger les éléments extérieurs ou créer une fresque sur mesure. Chaque projet commence par l’observation du support et de l’usage réel des pièces.",
     landmarks:
-      "Autour du centre-ville, de la gare, des quartiers proches du canal de Nantes a Brest et des axes vers Plouguer, Cleden-Poher ou Poullaouen, les batiments melangent maisons de ville, pavillons, longeres renovees et locaux commerciaux.",
+      "Carhaix réunit un centre-ville au patrimoine ancien, des quartiers résidentiels, des locaux professionnels et un territoire rural qui s’étend vers le Poher. Le canal de Nantes à Brest, le secteur de la gare et les axes vers Cléden-Poher ou Poullaouen composent des contextes bâtis très différents.",
     housing:
-      "A Carhaix, les chantiers demandent souvent une vraie attention aux murs anciens, aux supports qui ont travaille avec l'humidite et aux pieces exposees aux variations du climat du Centre Bretagne.",
+      "Maisons de ville, pavillons, longères rénovées ou commerces ne demandent ni les mêmes préparations ni les mêmes finitions. La visite sur place sert à vérifier les fonds, la lumière, la ventilation et les zones exposées avant de chiffrer les travaux.",
     sections: [
       {
-        title: "Peinture interieure a Carhaix-Plouguer",
+        title: "Peinture intérieure : préparer avant de décorer",
         body: [
-          "Une peinture interieure reussie a Carhaix ne se limite pas a appliquer une teinte. Dans beaucoup de maisons du secteur, les murs ont connu plusieurs couches, des reprises localisees, parfois des traces d'humidite ou de petits mouvements du support. Avant de parler couleur, Hendricx Peinture verifie l'etat des fonds, les anciennes peintures, les fissures fines, les zones poudreuses et la lumiere naturelle de chaque piece. Cette preparation permet d'obtenir un rendu net dans un salon, une chambre, une cage d'escalier ou une entree tres sollicitee.",
-          "Le choix des finitions est adapte a l'usage : mat profond pour une ambiance douce, velours pour une piece de vie, satin lessivable pour une cuisine, une circulation ou une location. Dans les interieurs proches du centre de Carhaix, ou l'on trouve aussi bien des maisons anciennes que des renovations recentes, la precision des raccords, des angles et des plafonds fait souvent la difference. L'objectif est simple : un chantier propre, un rendu durable et une couleur qui respecte le caractere du lieu.",
+          "Dans un salon, une chambre ou une cage d’escalier, le résultat dépend d’abord de ce qui se trouve sous la peinture. Anciennes couches, petites fissures, reprises d’enduit ou différences d’absorption peuvent rester visibles si elles ne sont pas traitées. Hendricx Peinture contrôle les fonds, protège les zones conservées et prépare les surfaces avant l’application.",
+          "La finition est ensuite choisie selon l’usage : un mat pour adoucir un plafond ou une pièce calme, un velours pour une pièce de vie, un satin plus facile à entretenir dans une circulation. Les teintes sont étudiées avec la lumière naturelle, le mobilier et les volumes pour obtenir un ensemble cohérent, plutôt qu’une couleur isolée sur un nuancier.",
         ],
       },
       {
-        title: "Peinture exterieure et protection des facades",
+        title: "Rénover une maison ancienne dans le Poher",
         body: [
-          "Le climat du Centre Bretagne impose une vraie rigueur pour les peintures exterieures. Pluie, vent, mousses, alternance d'humidite et de periodes plus seches fragilisent les volets, portails, boiseries, murets et facades. A Carhaix-Plouguer, un bon resultat depend d'abord du diagnostic : support farineux, ancienne peinture qui s'ecaille, bois grise, microfissures ou zones exposees plein ouest ne demandent pas le meme traitement.",
-          "Hendricx Peinture intervient avec une logique de protection autant que d'esthetique. Nettoyage, egrenage, impression, choix d'une peinture adaptee, respect des temps de sechage : chaque etape compte pour eviter une degradation rapide. Sur les maisons bretonnes, les longeres renovees et les extensions plus contemporaines autour de Carhaix, l'enjeu est de garder une facade harmonieuse tout en renforcant la tenue des supports face aux conditions locales.",
+          "Autour de Carhaix-Plouguer, le bâti ancien présente souvent des murs épais, des enduits de différentes époques et des pièces qui n’ont pas toutes la même ventilation. Avant de repeindre, il faut distinguer un défaut de surface d’un problème d’humidité actif. Une peinture ne doit jamais servir à dissimuler une cause qui demande d’abord une correction adaptée.",
+          "Lorsque le support est sain, le travail peut comprendre lessivage, ponçage, rebouchage, reprise d’enduit et impression. Cette progression permet d’harmoniser les zones neuves et anciennes, de limiter les marques en lumière rasante et de conserver le caractère de la maison, notamment lorsqu’elle associe pierre, bois et murs peints.",
         ],
       },
       {
-        title: "Renovation de longeres et maisons du Poher",
+        title: "Façades, volets et boiseries extérieures",
         body: [
-          "Les longeres et maisons anciennes autour de Carhaix ont souvent des murs epais, des enduits heterogenes et des pieces ou la gestion de l'humidite reste essentielle. Une renovation peinture doit respecter cette realite. Recouvrir trop vite un support mal prepare peut enfermer les defauts, marquer les reprises ou creer des cloques. L'approche de Hendricx Peinture consiste a observer le batiment avant de proposer une finition : nature du mur, ventilation, exposition, ancien enduit, traces de salpetre ou raccords recents.",
-          "Cette lecture du bati permet de choisir les bons produits et la bonne methode. Dans une piece de vie renovee, une cuisine ouverte, une chambre sous rampant ou une entree de longere, la peinture doit valoriser la pierre, le bois et les volumes sans donner un aspect artificiel. Les teintes sobres, les blancs casses, les verts profonds ou les nuances minerales fonctionnent particulierement bien dans les interieurs du Poher quand ils sont poses avec precision.",
+          "Pluie, vent et alternance de périodes humides sollicitent les façades, volets, portails et bardages du Centre Bretagne. Un support qui farine, une ancienne peinture qui s’écaille ou un bois grisé demandent des réponses différentes. Le diagnostic détermine le nettoyage, l’égrenage, l’impression et le produit de finition à retenir.",
+          "Les travaux extérieurs sont planifiés selon l’exposition et la météo. Le respect du séchage entre les couches compte autant que la teinte choisie : il conditionne l’adhérence et la tenue du système dans le temps.",
         ],
       },
       {
-        title: "Fresques murales et decoration artistique",
+        title: "Fresque murale pour un intérieur ou un commerce",
         body: [
-          "Carhaix-Plouguer possede une identite culturelle forte, entre centre historique, vie associative, commerces, musique et evenements qui attirent bien au-dela du secteur. Une fresque murale peut prolonger cette energie dans un commerce, un espace d'accueil, une maison familiale ou un lieu de travail. Hendricx Peinture cree des compositions sur mesure, pensees pour l'architecture du mur, la lumiere, les couleurs deja presentes et l'histoire que le client souhaite raconter.",
-          "La fresque n'est pas un decor plaque. Elle doit tenir compte des proportions, des passages, de la distance de lecture et de l'ambiance voulue. Une creation abstraite dans un salon, un motif identitaire dans une boutique ou un decor plus doux dans une chambre d'enfant ne suivent pas la meme logique. Le travail se construit par etapes : intention, croquis, choix chromatique, preparation du support, realisation et finition.",
-        ],
-      },
-      {
-        title: "Pourquoi choisir Hendricx Peinture pres de Carhaix",
-        body: [
-          "Faire appel a un artisan peintre local permet de gagner en justesse. Les contraintes des maisons de Carhaix, de Plouguer, de Cleden-Poher ou de Poullaouen ne sont pas celles d'un interieur standard. Les murs respirent differemment, les facades subissent un climat humide, et les attentes varient entre renovation familiale, mise en valeur d'un bien ou creation artistique. Hendricx Peinture apporte une approche precise, a la fois technique et sensible.",
-          "Le chantier est pense pour limiter les nuisances : protection des sols, organisation des pieces, preparation soignee, nettoyage, conseils sur les couleurs et communication claire avant intervention. Cette exigence sert directement la qualite finale. Une peinture bien preparee vieillit mieux, reste plus lisible dans le temps et evite les reprises prematurees. Pour un devis a Carhaix-Plouguer, le premier rendez-vous permet de cadrer les surfaces, les contraintes et le niveau de finition attendu.",
-        ],
-      },
-      {
-        title: "Intervention autour de Carhaix-Plouguer",
-        body: [
-          "Depuis Paule, Hendricx Peinture se deplace facilement vers Carhaix-Plouguer et les communes voisines : Cleden-Poher, Motreff, Poullaouen, Mael-Carhaix, Glomel, Treogan ou Callac selon la nature du projet. Cette proximite facilite les visites techniques, les ajustements de planning et les echanges avant devis. Elle permet aussi de mieux anticiper les contraintes propres aux chantiers du Centre Bretagne : accessibilite, temps de sechage, saison, ventilation et humidite.",
-          "Les demandes les plus frequentes concernent la remise en peinture d'une piece de vie, la renovation complete d'un interieur, les finitions apres travaux, les boiseries exterieures, les facades et les projets muraux personnalises. Pour chaque chantier, la priorite reste la meme : comprendre le lieu avant d'intervenir, proposer une solution realiste, puis executer avec soin.",
+          "L’identité culturelle de Carhaix se prête aux projets visuels singuliers. Une fresque peut donner un point focal à une pièce de vie, rendre un accueil mémorable ou traduire l’univers d’un commerce sans surcharger l’espace.",
+          "Le projet se construit à partir du mur, de la distance de lecture, des passages et des couleurs déjà présentes. Après un échange sur l’intention, Hendricx Peinture prépare une direction graphique, ajuste la palette puis réalise la composition sur un support correctement préparé.",
         ],
       },
     ],
-    nearby: ["Cleden-Poher", "Motreff", "Poullaouen", "Mael-Carhaix", "Glomel"],
+    nearby: ["Cléden-Poher", "Motreff", "Poullaouen", "Maël-Carhaix", "Glomel"],
     gallery: [
       {
         src: "/photos/476836935_2078489489256904_6370289537618551027_n.jpg",
-        alt: "Peinture interieure soignee dans une maison a Carhaix-Plouguer",
-        caption: "Finition mate et preparation des murs pour une piece de vie proche de Carhaix.",
+        alt: "Exemple de peinture intérieure réalisée par Hendricx Peinture",
+        caption: "Finition intérieure et soin des raccords dans une pièce de vie.",
       },
       {
         src: "/photos/480347323_2084649431974243_4394888306244998500_n.jpg",
-        alt: "Enduit mineral et renovation interieure autour de Carhaix",
-        caption: "Travail de matiere pour valoriser les volumes d'une renovation en Centre Bretagne.",
+        alt: "Exemple de travail de matière en rénovation intérieure",
+        caption: "Travail de matière pour donner du relief sans alourdir le volume.",
       },
       {
         src: "/photos/661744embeddedImage.jpg",
-        alt: "Fresque murale artistique pour un projet a Carhaix-Plouguer",
-        caption: "Creation murale sur mesure pour donner une identite forte a un espace.",
+        alt: "Exemple de fresque murale réalisée par Hendricx Peinture",
+        caption: "Création murale sur mesure pensée pour l’architecture du lieu.",
       },
     ],
-    reviews: [
-      {
-        quote:
-          "Le chantier a ete tres bien protege et les finitions sont nettes. Les conseils de couleurs ont vraiment change la piece.",
-        author: "Client particulier",
-        context: "Renovation interieure a Carhaix-Plouguer",
-      },
-      {
-        quote:
-          "Approche serieuse sur les supports anciens, avec des explications claires avant le devis.",
-        author: "Proprietaire de maison",
-        context: "Maison ancienne secteur Poher",
-      },
-    ],
+    reviews: [],
     faqs: [
       {
-        question: "Intervenez-vous rapidement a Carhaix-Plouguer ?",
+        question: "Hendricx Peinture se déplace-t-il à Carhaix-Plouguer ?",
         answer:
-          "Oui, les visites de devis sont possibles a Carhaix-Plouguer et dans les communes proches selon le planning et la nature des travaux.",
+          "Oui. Les visites de devis sont possibles à Carhaix-Plouguer et dans les communes proches selon la nature du projet et le planning.",
       },
       {
-        question: "Pouvez-vous traiter des murs anciens ou humides ?",
+        question: "Pouvez-vous repeindre un mur ancien ou marqué par l’humidité ?",
         answer:
-          "Oui. Le support est verifie avant travaux afin d'identifier humidite, fissures, anciennes couches et besoin de preparation specifique.",
+          "Le support est d’abord diagnostiqué. Si l’humidité est active, sa cause doit être traitée avant la peinture. Lorsque le mur est sain, une préparation et une finition compatibles sont proposées.",
       },
       {
-        question: "Realisez-vous des fresques pour les commerces de Carhaix ?",
+        question: "Que faut-il indiquer pour demander un devis ?",
         answer:
-          "Oui. Les fresques peuvent etre concues pour une boutique, un accueil, un restaurant, un bureau ou une maison particuliere.",
+          "Précisez la commune, les pièces ou surfaces concernées, l’état apparent des supports et le résultat souhaité. Des photos peuvent aider au premier échange, puis une visite permet de confirmer le chiffrage.",
+      },
+      {
+        question: "Réalisez-vous des fresques pour les commerces de Carhaix ?",
+        answer:
+          "Oui. Une fresque peut être conçue pour une boutique, un espace d’accueil, un restaurant, un bureau ou une habitation.",
       },
     ],
   },
   "peintre-rostrenen": {
     slug: "peintre-rostrenen",
     city: "Rostrenen",
-    title: "Peintre a Rostrenen",
+    title: "Peintre à Rostrenen",
     description:
-      "Artisan peintre a Rostrenen : peinture interieure, exterieure, renovation de longere, decoration murale et fresque artistique en Centre Bretagne.",
-    keywords: ["peintre rostrenen", "artisan peintre rostrenen", "renovation rostrenen", "peinture centre bretagne"],
+      "Artisan peintre à Rostrenen pour peinture intérieure, rénovation de bâti ancien, façades, boiseries et fresques murales. Devis sur visite.",
+    keywords: [
+      "peintre rostrenen",
+      "artisan peintre rostrenen",
+      "renovation rostrenen",
+      "peinture interieur rostrenen",
+      "peinture centre bretagne",
+    ],
     intro:
-      "Hendricx Peinture intervient a Rostrenen pour redonner de la tenue aux interieurs, proteger les exterieurs et creer des fresques murales adaptees aux maisons, commerces et lieux de vie du secteur.",
+      "Hendricx Peinture intervient à Rostrenen et dans le Kreiz Breizh pour préparer les supports, remettre les pièces en couleur, protéger les extérieurs et réaliser des décors muraux adaptés au lieu.",
     landmarks:
-      "Rostrenen se situe au coeur du Centre Bretagne, a proximite du canal, de la campagne vallonnee et des routes vers Glomel, Plouguernevel, Mael-Carhaix et Gouarec.",
+      "Rostrenen se trouve au cœur du Pays Fisel, à la croisée du canal de Nantes à Brest et des voies vertes du Centre Bretagne. Le bourg, les quartiers résidentiels et les hameaux voisins réunissent des maisons d’âges et de constructions variés.",
     housing:
-      "Le parc local alterne maisons de bourg, pavillons, batiments agricoles transformes, longeres et interieurs renoves ou la preparation des murs conditionne la qualite finale.",
+      "Maison de bourg, pavillon ou longère ne se rénovent pas de la même manière. La nature des anciens enduits, la ventilation, l’exposition et l’usage des pièces guident la préparation et le choix de la finition.",
     sections: [
       {
-        title: "Un artisan peintre pour les interieurs de Rostrenen",
+        title: "Peinture intérieure pour des pièces faciles à vivre",
         body: [
-          "A Rostrenen, beaucoup de projets de peinture partent d'un besoin tres concret : rafraichir une piece sombre, moderniser une maison avant installation, finir une renovation ou harmoniser plusieurs volumes apres des travaux. Hendricx Peinture commence par lire l'espace. Orientation des fenetres, hauteur sous plafond, etat des enduits, traces d'anciennes fixations, fissures fines ou differences d'absorption influencent le resultat. Une peinture interieure durable repose sur cette preparation invisible.",
-          "Les maisons du secteur peuvent presenter des murs irreguliers, surtout dans les batiments anciens ou les pieces ayant connu plusieurs renovations. Les reprises sont alors traitees avec soin pour eviter les marques sous lumiere rasante. La finition est choisie selon l'usage : mat pour un rendu calme, velours pour une bonne resistance, satin pour les zones plus exposees. Cette approche convient aussi bien aux maisons de bourg qu'aux longeres autour de Rostrenen.",
+          "Rafraîchir une pièce, harmoniser plusieurs volumes après travaux ou préparer une maison avant installation commence par un état des lieux. Hendricx Peinture observe les enduits, les anciennes peintures, les fissures fines et les différences d’absorption qui pourraient réapparaître après séchage.",
+          "Le choix entre mat, velours et satin dépend de la lumière et de l’entretien attendu. Une entrée, une cuisine ou une location demandent une résistance différente d’une chambre. Cette attention évite les choix purement esthétiques qui vieillissent mal à l’usage.",
         ],
       },
       {
-        title: "Renovation interieure en Centre Bretagne",
+        title: "Rénovation de longères et de murs anciens",
         body: [
-          "Renover un interieur a Rostrenen implique souvent de composer avec l'humidite du climat breton, des murs epais et des pieces qui ventilent plus ou moins bien. La peinture ne doit pas masquer un probleme, elle doit accompagner un support sain. Avant intervention, Hendricx Peinture verifie les fonds et conseille sur les corrections utiles : lessivage, poncage, rebouchage, impression adaptee, reprise d'enduit ou choix d'une finition plus respirante selon le cas.",
-          "Dans une longere renovee, une maison familiale ou un logement locatif, les attentes ne sont pas identiques. Certains clients recherchent une ambiance sobre et lumineuse, d'autres veulent une couleur plus affirmee pour structurer une piece. Le role de l'artisan consiste a relier l'envie esthetique a la realite technique. C'est ce qui permet d'obtenir un resultat propre, coherent et durable, sans surprise apres sechage.",
+          "Dans le Kreiz Breizh, certaines rénovations associent murs épais, reprises récentes et enduits plus anciens. Avant d’appliquer une finition, il faut vérifier que le support est sain et comprendre l’origine d’éventuelles traces d’humidité. Lessivage, ponçage, rebouchage, reprise d’enduit ou impression sont ensuite adaptés au constat.",
+          "L’objectif est de retrouver un fond régulier sans effacer le caractère du bâtiment. Les couleurs peuvent apporter de la lumière, souligner une menuiserie ou structurer un grand volume, à condition de rester cohérentes avec la pierre, le bois et la lumière naturelle.",
         ],
       },
       {
-        title: "Peinture exterieure, boiseries et facades",
+        title: "Peinture extérieure et protection des boiseries",
         body: [
-          "Les exterieurs de Rostrenen subissent des conditions changeantes : pluie reguliere, vent, mousses, projections et variations de temperature. Les volets, portails, portes de garage, bardages et facades demandent donc une preparation rigoureuse. Une peinture exterieure qui tient dans le temps commence par un support propre, sec, adherent et compatible avec le produit choisi.",
-          "Hendricx Peinture adapte la methode au support : bois a degriser ou poncer, ancienne peinture a egrener, facade a nettoyer, fissures a reprendre, impression a appliquer. L'objectif n'est pas seulement de changer une couleur, mais de proteger le materiau. Sur les maisons autour de Rostrenen, Glomel ou Plouguernevel, cette exigence est essentielle pour eviter l'ecaillement rapide et conserver une facade soignee.",
+          "Les volets, portails, bardages et façades sont exposés à la pluie, au vent et aux variations de température. Leur tenue dépend d’un support propre, sec et adhérent. Une ancienne couche qui s’écaille ou un bois grisé ne peuvent pas être simplement recouverts.",
+          "La méthode est ajustée au matériau et à son état : nettoyage, ponçage ou égrenage, reprise ponctuelle, impression puis finition. Les travaux sont positionnés dans une fenêtre météo compatible afin de ne pas compromettre le séchage.",
         ],
       },
       {
-        title: "Decoration murale et fresques personnalisees",
+        title: "Décoration et fresque murale sur mesure",
         body: [
-          "Une fresque murale a Rostrenen peut transformer un mur d'accueil, une cage d'escalier, une piece de vie ou un espace professionnel. Le territoire possede une identite rurale et culturelle forte ; une creation murale peut s'en inspirer sans tomber dans le decor attendu. Hendricx Peinture travaille la composition, les couleurs et la matiere pour que la fresque s'integre naturellement au lieu.",
-          "Le projet peut etre discret, graphique, abstrait ou plus narratif. Il commence par un echange sur l'ambiance, les contraintes et la place du mur dans le quotidien. La preparation reste aussi importante que pour une peinture classique : un support mal prepare fragilise la creation. Une fois le fond stabilise, la fresque est realisee avec une attention particuliere aux raccords, aux lignes et a la lecture de l'ensemble.",
-        ],
-      },
-      {
-        title: "Pourquoi choisir Hendricx Peinture a Rostrenen",
-        body: [
-          "Choisir Hendricx Peinture, c'est choisir une approche qui ne separe pas la technique du rendu visuel. Un chantier de peinture reussi doit etre propre pendant les travaux, lisible dans le devis et durable apres reception. Les protections, les temps de sechage, l'ordre des pieces et les choix de finition sont expliques avant de commencer afin que le client sache comment le chantier va se derouler.",
-          "Cette methode convient aux renovations completes comme aux interventions plus ciblees. Elle est particulierement utile dans le bati du Centre Bretagne, ou les supports sont rarement parfaitement standards. A Rostrenen, l'enjeu est souvent de respecter le caractere d'une maison tout en lui apportant de la lumiere et de la nettete. Le resultat attendu : une peinture qui valorise l'espace sans l'aplatir.",
-        ],
-      },
-      {
-        title: "Zone d'intervention autour de Rostrenen",
-        body: [
-          "Depuis Paule, les deplacements vers Rostrenen sont adaptes aux visites de devis et aux chantiers dans les communes voisines. Hendricx Peinture peut intervenir vers Glomel, Mael-Carhaix, Plouguernevel, Gouarec, Bonen ou les hameaux proches selon le calendrier. Cette zone de travail permet de suivre les projets avec souplesse et de revenir facilement pour ajuster un point technique si necessaire.",
-          "Les demandes concernent aussi bien des pieces interieures que des facades, des boiseries, des finitions apres travaux ou des creations murales. Pour obtenir un devis, le plus efficace est de decrire le lieu, les surfaces approximatives, l'etat des supports et l'objectif recherche. Une visite permet ensuite de valider les contraintes et de proposer une solution coherente.",
+          "Une fresque peut transformer un mur d’accueil, une cage d’escalier, une chambre ou un espace professionnel. À Rostrenen, elle peut s’inspirer d’une identité, d’une activité ou d’une ambiance sans reproduire un décor convenu.",
+          "La composition tient compte des proportions, des passages et de la distance de lecture. Le projet avance par étapes : échange sur l’intention, direction graphique, palette, préparation du fond puis réalisation. Le décor reste ainsi lié à l’usage quotidien du lieu.",
         ],
       },
     ],
-    nearby: ["Glomel", "Mael-Carhaix", "Plouguernevel", "Gouarec", "Bonen"],
+    nearby: ["Glomel", "Maël-Carhaix", "Plouguernével", "Gouarec", "Bonen"],
     gallery: [
       {
         src: "/photos/477796924_2078489629256890_7221419132280354026_n.jpg",
-        alt: "Renovation interieure et finition murale a Rostrenen",
-        caption: "Preparation minutieuse pour un rendu sobre dans une maison du Centre Bretagne.",
+        alt: "Exemple de rénovation intérieure réalisée par Hendricx Peinture",
+        caption: "Préparation des murs et finition sobre pour un intérieur durable.",
       },
       {
         src: "/photos/480680043_2084649251974261_4842625914116337843_n.jpg",
-        alt: "Peinture decorative mate dans un interieur a Rostrenen",
-        caption: "Teinte profonde et finition adaptee a une piece de vie sollicitee.",
+        alt: "Exemple de peinture décorative mate dans une pièce de vie",
+        caption: "Teinte profonde choisie selon la lumière et l’usage de la pièce.",
       },
       {
         src: "/photos/2962805embeddedImage.jpg",
-        alt: "Fresque murale personnalisee autour de Rostrenen",
-        caption: "Composition murale pensee pour l'usage et la lumiere du lieu.",
+        alt: "Exemple de fresque murale personnalisée par Hendricx Peinture",
+        caption: "Composition murale conçue pour dialoguer avec le volume existant.",
       },
     ],
-    reviews: [
-      {
-        quote:
-          "Travail propre et precis. Les reprises de murs anciens ont ete faites avant peinture, ce qui se voit dans le resultat.",
-        author: "Habitant de Rostrenen",
-        context: "Renovation de piece de vie",
-      },
-      {
-        quote:
-          "Bonne ecoute sur l'ambiance souhaitee et conseils utiles pour choisir une finition plus durable.",
-        author: "Client particulier",
-        context: "Peinture interieure pres de Rostrenen",
-      },
-    ],
+    reviews: [],
     faqs: [
       {
-        question: "Hendricx Peinture intervient-il a Rostrenen et autour ?",
+        question: "Hendricx Peinture intervient-il à Rostrenen et autour ?",
         answer:
-          "Oui, les interventions sont possibles a Rostrenen, Glomel, Mael-Carhaix, Plouguernevel et dans les communes proches selon le projet.",
+          "Oui. Les interventions sont possibles à Rostrenen, Glomel, Maël-Carhaix, Plouguernével et dans les communes proches selon le projet et le planning.",
       },
       {
         question: "Quelle peinture choisir pour une maison humide ?",
         answer:
-          "Le choix depend du diagnostic. Il faut d'abord comprendre l'origine de l'humidite puis utiliser une preparation et une finition compatibles.",
+          "Le choix dépend du diagnostic. Il faut d’abord identifier et traiter la cause d’une humidité active, puis utiliser une préparation et une finition compatibles avec le support sain.",
       },
       {
-        question: "Pouvez-vous peindre une longere en renovation ?",
+        question: "Pouvez-vous intervenir dans une longère en rénovation ?",
         answer:
-          "Oui, les longeres demandent une preparation particuliere des murs, des enduits et des finitions pour respecter le bati ancien.",
+          "Oui. Une visite permet de distinguer les supports anciens des reprises neuves et de définir les préparations nécessaires avant la finition.",
+      },
+      {
+        question: "Comment préparer une demande de devis à Rostrenen ?",
+        answer:
+          "Indiquez l’adresse ou la commune, les surfaces concernées, l’état des murs ou boiseries et le rendu recherché. Des photos facilitent le premier échange avant la visite.",
       },
     ],
-  },
-  "peintre-gourin": {
+  },  "peintre-gourin": {
     slug: "peintre-gourin",
     city: "Gourin",
     title: "Peintre a Gourin",
@@ -464,4 +425,3 @@ export const localPages: Record<string, LocalPageData> = {
 export function isLocalPageNoindex(slug: string) {
   return scheduledLocalSlugs.includes(slug);
 }
-

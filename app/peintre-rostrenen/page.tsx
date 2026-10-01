@@ -7,7 +7,7 @@ import { isLocalPageNoindex, localPages } from "../local-pages";
 const page = localPages["peintre-rostrenen"];
 
 export const metadata: Metadata = createMetadata({
-  title: "Peintre a Rostrenen | Renovation, peinture et fresques murales",
+  title: "Peintre à Rostrenen | Rénovation, peinture et fresques murales",
   description: page.description,
   path: `/${page.slug}`,
   keywords: page.keywords,

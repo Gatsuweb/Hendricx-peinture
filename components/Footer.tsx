@@ -30,7 +30,7 @@ export function Footer() {
           <h4>Zones</h4>
           <ul>
             <li>
-              <span>Carhaix-Plouguer</span>
+              <Link href="/peintre-carhaix-plouguer">Carhaix-Plouguer</Link>
             </li>
             <li>
               <span>Rostrenen</span>

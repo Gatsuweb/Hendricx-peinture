@@ -7,7 +7,7 @@ import { isLocalPageNoindex, localPages } from "../local-pages";
 const page = localPages["peintre-carhaix-plouguer"];
 
 export const metadata: Metadata = createMetadata({
-  title: "Peintre a Carhaix-Plouguer | Artisan peinture interieure et exterieure",
+  title: "Peintre à Carhaix-Plouguer | Artisan peinture intérieure et extérieure",
   description: page.description,
   path: `/${page.slug}`,
   keywords: page.keywords,
