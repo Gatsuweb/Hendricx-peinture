@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
 import { EmailLink } from "@/components/EmailLink";
-import { CONTACT_EMAIL } from "@/lib/contact";
+import { PhoneLink } from "@/components/PhoneLink";
+import { CONTACT_EMAIL, CONTACT_PHONE } from "@/lib/contact";
 import { PageShell } from "@/components/PageShell";
 import { createMetadata } from "../seo";
 import styles from "../site.module.css";
@@ -38,9 +39,13 @@ export default function ContactPage() {
             </h2>
             <p className={`${styles.bodyMd} reveal delay200`}>
               Pour une demande de devis ou pour échanger autour de votre projet,
-              contactez-moi par e-mail ou retrouvez mes réalisations sur les réseaux sociaux.
+              contactez-moi par téléphone, par e-mail ou retrouvez mes réalisations sur les réseaux sociaux.
             </p>
             <div className={`${styles.contactDetails} reveal delay300`}>
+              <PhoneLink>
+                <span>Téléphone</span>
+                <strong>{CONTACT_PHONE.label}</strong>
+              </PhoneLink>
               <EmailLink>
                 <span>E-mail</span>
                 <strong>{CONTACT_EMAIL}</strong>

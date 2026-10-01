@@ -4,7 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { CONTACT_PHONE } from "@/lib/contact";
 import { ButtonLink } from "./ButtonLink";
+import { PhoneLink } from "./PhoneLink";
 import styles from "./Header.module.css";
 
 const navItems = [
@@ -124,6 +126,14 @@ export function Header() {
           <ButtonLink href="/contact" className={styles.mobileCtaButton}>
             Demander un devis
           </ButtonLink>
+          <PhoneLink
+            variant="button"
+            tone="line"
+            className={styles.mobilePhoneLink}
+            aria-label={`Appeler Hendricx Peinture au ${CONTACT_PHONE.label}`}
+          >
+            Appeler le {CONTACT_PHONE.label}
+          </PhoneLink>
         </div>
       </nav>
 

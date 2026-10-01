@@ -3,7 +3,7 @@
 ## Configuration
 
 - `NEXT_PUBLIC_GTM_ID` : identifiant du conteneur GTM. Le conteneur fourni est `GTM-5HK7H9W9`. Il est configuré dans le `.env` local (ignoré par Git) ; définir la même variable dans l'hébergement avant le déploiement, puis reconstruire l'application.
-- `NEXT_PUBLIC_CONTACT_PHONE` : remplacer `NUMERO_A_RENSEIGNER` par le vrai numéro professionnel, par exemple sous un format français lisible. Le composant `PhoneLink` n'affiche rien tant qu'aucun numéro valide n'est configuré. Il n'est pas encore placé sur une page.
+- `NEXT_PUBLIC_CONTACT_PHONE` : numéro professionnel affiché par les liens d'appel. La valeur publique par défaut est `07 81 25 10 85` et peut être remplacée dans l'environnement de déploiement.
 - Les identifiants GA4 et Google Ads restent à définir dans GTM. Aucun identifiant fictif n'est intégré.
 
 ## Réponses du formulaire
@@ -23,7 +23,7 @@ Une réponse HTTP 200 ne suffit donc jamais à compter un lead. Le client vérif
 | --- | --- | --- |
 | `generate_lead` | Réponse `accepted` après un envoi de devis | `lead_type: "contact_form"` |
 | `email_click` | Clic sur l'adresse commerciale de la page Contact | Aucun |
-| `phone_click` | Clic sur un futur `PhoneLink` | Aucun |
+| `phone_click` | Clic sur un lien d'appel de la page Contact, du menu mobile ou d'une page locale | Aucun |
 
 Aucun nom, e-mail, téléphone, texte du message ni autre donnée personnelle n'est envoyé au dataLayer par ces fonctions. Les clics mesurent l'intention, pas la réalisation d'un appel ou l'envoi effectif d'un e-mail depuis le logiciel de messagerie.
 
@@ -43,7 +43,7 @@ Le code `noscript` standard n'est pas installé : il chargerait GTM en dehors de
 4. Cliquer l'e-mail commercial. Lire `window.dataLayer.filter(item => item?.event === "email_click")`. Une nouvelle entrée doit apparaître.
 5. Pour tester le honeypot sans envoyer d'e-mail, saisir des valeurs de test dans le formulaire, puis exécuter `document.querySelector('input[name="website"]').value = 'robot'` et `document.querySelector('form').requestSubmit()`. Le formulaire doit indiquer que la demande n'a pas été envoyée. `window.dataLayer.filter(item => item?.event === "generate_lead")` ne doit pas gagner d'entrée.
 6. Pour tester un lead réel, vider le honeypot, saisir une demande de test et vérifier que l'e-mail est accepté par Resend. Une seule entrée `{ event: "generate_lead", lead_type: "contact_form" }` doit apparaître. Ne pas utiliser de données personnelles dans les captures ou journaux de test.
-7. Une fois le vrai numéro configuré et `PhoneLink` placé, cliquer dessus et vérifier `window.dataLayer.filter(item => item?.event === "phone_click")`.
+7. Cliquer sur un lien d'appel et vérifier `window.dataLayer.filter(item => item?.event === "phone_click")`. Une nouvelle entrée doit apparaître, sans numéro de téléphone dans ses propriétés.
 8. Dans « Gérer les cookies », refuser à nouveau et vérifier que les états deviennent `denied` et que le conteneur n'est plus chargé après le rechargement.
 
 ## Configuration restante dans GTM, GA4 et Google Ads

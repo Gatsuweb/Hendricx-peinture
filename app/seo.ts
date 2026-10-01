@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CONTACT_EMAIL, CONTACT_PHONE } from "@/lib/contact";
 
 export const siteUrl = "https://www.hendricx-peinture.com";
 
@@ -100,7 +101,8 @@ export const baseLocalBusinessSchema = {
   url: siteUrl,
   image: absoluteUrl("/photos/661744embeddedImage.jpg"),
   logo: absoluteUrl("/logo-hendricx.png"),
-  email: "n.hendricx@laposte.net",
+  email: CONTACT_EMAIL,
+  telephone: CONTACT_PHONE.schemaValue,
   vatID: "FR89839592094",
   taxID: "839592094",
   description:

@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ButtonLink } from "@/components/ButtonLink";
 import { JsonLd } from "@/components/JsonLd";
+import { PhoneLink } from "@/components/PhoneLink";
+import { CONTACT_PHONE } from "@/lib/contact";
 import {
   absoluteUrl,
   baseLocalBusinessSchema,
@@ -222,7 +224,9 @@ export function LocalSeoPage({ page }: LocalSeoPageProps) {
           </div>
           <div className={styles.localFinalCtaActions}>
             <ButtonLink href="/contact">Demander un devis</ButtonLink>
-            <ButtonLink href="/realisations" tone="line">Voir tous les chantiers</ButtonLink>
+            <PhoneLink variant="button" tone="line">
+              Appeler le {CONTACT_PHONE.label}
+            </PhoneLink>
           </div>
         </section>
       </main>

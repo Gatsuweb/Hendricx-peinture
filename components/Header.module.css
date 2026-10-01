@@ -412,6 +412,8 @@
   .mobileCta {
     display: flex;
     width: 100%;
+    flex-direction: column;
+    gap: 16px;
     margin-top: 20px;
     opacity: 0;
     transform: translateY(10px);
@@ -425,7 +427,8 @@
     transform: translateY(0);
   }
 
-  .mobileCtaButton {
+  .mobileCtaButton,
+  .mobilePhoneLink {
     width: 100%;
   }
 }
