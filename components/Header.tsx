@@ -138,7 +138,20 @@ export function Header() {
       </nav>
 
       <div className={styles.cta}>
-        <ButtonLink href="/contact">Demander un devis</ButtonLink>
+        <PhoneLink
+          variant="button"
+          className={styles.desktopPhoneCta}
+          aria-label={`Appeler Hendricx Peinture au ${CONTACT_PHONE.label}`}
+        >
+          Appeler · {CONTACT_PHONE.label}
+        </PhoneLink>
+        <ButtonLink
+          href="/contact"
+          tone="line"
+          className={styles.desktopQuoteCta}
+        >
+          Demander un devis
+        </ButtonLink>
       </div>
 
       <button

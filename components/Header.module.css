@@ -93,6 +93,8 @@
 
 .cta {
   display: none;
+  align-items: center;
+  gap: 20px;
 }
 
 .mobileCta {
@@ -247,6 +249,15 @@
   .navLink {
     font-size: 11px;
     letter-spacing: 0.13em;
+  }
+
+  .desktopQuoteCta {
+    display: none;
+  }
+
+  .desktopPhoneCta {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
