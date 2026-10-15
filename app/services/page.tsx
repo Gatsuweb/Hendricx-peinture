@@ -63,11 +63,11 @@ export default function ServicesPage() {
             <div className={`${styles.serviceText} ${styles.textLeft}`}>
               <span className={`${styles.eyebrow} reveal`}>02 - Précision</span>
               <h2 className={`${styles.headlineLg} reveal delay100`}>
-                Rénovation d&apos;exterieur
+                Rénovation intérieure et extérieure
               </h2>
               <p className={`${styles.bodyMd} reveal delay200`}>
-                Des finitions soignées pour sublimer vos espaces. Je réalise des
-                travaux de peinture et de finition avec des matériaux de qualité.
+                Préparation des supports, peinture intérieure, façades et boiseries :
+                chaque finition est choisie selon le matériau, l’usage et l’exposition.
               </p>
               <ButtonLink href="/services/renovation" tone="line">
                 Découvrir mes standards

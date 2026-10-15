@@ -11,7 +11,7 @@ Le projet contient quatre pages locales. Leur publication progressive est pilot�
 | Page | Date | État |
 | --- | --- | --- |
 | `/peintre-carhaix-plouguer` | 1er octobre 2026 | Publiée |
-| `/peintre-rostrenen` | 8 octobre 2026 | Planifiée, encore en `noindex` |
+| `/peintre-rostrenen` | 15 octobre 2026 | Publiée |
 | `/peintre-gourin` | À définir | Brouillon |
 | `/peintre-huelgoat` | À définir | Brouillon |
 
@@ -24,4 +24,4 @@ Le projet contient quatre pages locales. Leur publication progressive est pilot�
 5. Lancer `npm.cmd run lint` puis `npm.cmd run build`.
 6. Déployer et demander l'indexation dans Google Search Console.
 
-Une seule nouvelle page locale doit être rendue indexable à la fois. Pour la séquence actuelle, Rostrenen ne doit pas être publiée avant le 8 octobre 2026.
+Une seule nouvelle page locale doit être rendue indexable à la fois. Gourin et Huelgoat restent en brouillon jusqu’à validation de leurs éléments locaux, photos et témoignages.

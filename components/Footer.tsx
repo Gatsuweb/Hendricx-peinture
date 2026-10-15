@@ -33,7 +33,7 @@ export function Footer() {
               <Link href="/peintre-carhaix-plouguer">Carhaix-Plouguer</Link>
             </li>
             <li>
-              <span>Rostrenen</span>
+              <Link href="/peintre-rostrenen">Rostrenen</Link>
             </li>
             <li>
               <span>Gourin</span>

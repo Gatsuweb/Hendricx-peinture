@@ -126,11 +126,11 @@ export const localPages: Record<string, LocalPageData> = {
       "peinture centre bretagne",
     ],
     intro:
-      "Hendricx Peinture intervient à Rostrenen et dans le Kreiz Breizh pour préparer les supports, remettre les pièces en couleur, protéger les extérieurs et réaliser des décors muraux adaptés au lieu.",
+      "Depuis Paule, Hendricx Peinture intervient à Rostrenen et dans le Kreiz Breizh pour préparer les supports, rénover les peintures intérieures, protéger les façades et boiseries extérieures, ou créer une fresque murale sur mesure.",
     landmarks:
-      "Rostrenen se trouve au cœur du Pays Fisel, à la croisée du canal de Nantes à Brest et des voies vertes du Centre Bretagne. Le bourg, les quartiers résidentiels et les hameaux voisins réunissent des maisons d’âges et de constructions variés.",
+      "Rostrenen se situe au cœur du Kreiz Breizh et constitue un bassin de vie pour les communes voisines. Son parc de logements est composé majoritairement de maisons construites à des périodes très différentes, entre maisons de bourg, pavillons et habitations plus anciennes.",
     housing:
-      "Maison de bourg, pavillon ou longère ne se rénovent pas de la même manière. La nature des anciens enduits, la ventilation, l’exposition et l’usage des pièces guident la préparation et le choix de la finition.",
+      "Maison de bourg, pavillon, appartement ou local professionnel ne demandent pas la même préparation. La nature des anciens enduits, la ventilation, l’exposition et l’usage des pièces guident le choix des produits et du niveau de finition.",
     sections: [
       {
         title: "Peinture intérieure pour des pièces faciles à vivre",

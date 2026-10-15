@@ -21,13 +21,15 @@ export const serviceArea = [
 
 export const localPagePublicationDates: Record<string, string> = {
   "peintre-carhaix-plouguer": "2026-10-01",
-  "peintre-rostrenen": "2026-10-08",
+  "peintre-rostrenen": "2026-10-15",
 };
 
-export const publishedLocalSlugs = ["peintre-carhaix-plouguer"];
+export const publishedLocalSlugs = [
+  "peintre-carhaix-plouguer",
+  "peintre-rostrenen",
+];
 
 export const scheduledLocalSlugs = [
-  "peintre-rostrenen",
   "peintre-gourin",
   "peintre-huelgoat",
 ];

@@ -77,7 +77,7 @@ export default function RenovationPage() {
             </h2>
             <p className={`${styles.bodyMd} reveal delay200`}>
               Je commence par analyser l&apos;état des surfaces, puis je
-              préparons soigneusement les supports pour garantir un résultat propre et
+              prépare soigneusement les supports pour garantir un résultat propre et
               adapté à votre quotidien.
             </p>
           </div>
